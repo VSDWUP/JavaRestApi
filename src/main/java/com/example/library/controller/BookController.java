@@ -22,7 +22,7 @@ public class BookController {
     @PostMapping(value = "/book")
     public ResponseEntity <?> create(@RequestBody Book book){
         bookService.createBook(book);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(book,HttpStatus.CREATED);
     }
 
     @GetMapping(value = "book/{id}")
@@ -32,7 +32,7 @@ public class BookController {
             return new ResponseEntity<>(book,HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Book not found",HttpStatus.NOT_FOUND);
         }
     }
 
@@ -40,16 +40,16 @@ public class BookController {
     public ResponseEntity <?> update(@PathVariable(name = "id") int id, @RequestBody Book book){
         final boolean updated = bookService.updateBook(book,id);
         return updated
-                ? new ResponseEntity<>(HttpStatus.OK)
-                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+                ? new ResponseEntity<>("Book updated",HttpStatus.OK)
+                : new ResponseEntity<>("Book not modified",HttpStatus.NOT_MODIFIED);
     }
 
     @DeleteMapping(value = "book/{id}")
     public ResponseEntity<?> delete (@PathVariable(name = "id") int id){
         final boolean deleted = bookService.deleteBook(id);
         return deleted
-                ? new ResponseEntity<>(HttpStatus.OK)
-                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+                ? new ResponseEntity<>("Book deleted",HttpStatus.OK)
+                : new ResponseEntity<>("Book not modified", HttpStatus.NOT_MODIFIED);
     }
 
     @GetMapping(value = "/books")
@@ -59,7 +59,7 @@ public class BookController {
             return new ResponseEntity<>(bookList,HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Books not found",HttpStatus.NOT_FOUND);
         }
     }
 }

@@ -22,7 +22,7 @@ public class AuthorController {
     @PostMapping(value = "/author")
     public ResponseEntity <?> create(@RequestBody Author author){
         authorService.createAuthor(author);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(author,HttpStatus.CREATED);
     }
 
     @GetMapping(value = "/author/{id}")
@@ -32,7 +32,7 @@ public class AuthorController {
             return new ResponseEntity<>(author, HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Author not found",HttpStatus.NOT_FOUND);
         }
     }
 
@@ -40,8 +40,8 @@ public class AuthorController {
     public ResponseEntity <?> update(@PathVariable(value = "id") int id, @RequestBody Author author){
         final boolean updated = authorService.updateAuthor(author,id);
         return updated
-                ? new ResponseEntity<>(HttpStatus.OK)
-                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+                ? new ResponseEntity<>(author, HttpStatus.OK)
+                : new ResponseEntity<>("Author not modified",HttpStatus.NOT_MODIFIED);
 
 
     }
@@ -50,8 +50,8 @@ public class AuthorController {
     public ResponseEntity delete(@PathVariable(value = "id") int id){
         final boolean deleted = authorService.deleteAuthor(id);
         return deleted
-                ? new ResponseEntity(HttpStatus.OK)
-                : new ResponseEntity(HttpStatus.NOT_MODIFIED);
+                ? new ResponseEntity("Author deleted",HttpStatus.OK)
+                : new ResponseEntity("Author not modified",HttpStatus.NOT_MODIFIED);
 
     }
 
@@ -62,7 +62,7 @@ public class AuthorController {
             return new ResponseEntity<>(authorList, HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Authors not found",HttpStatus.NOT_FOUND);
         }
     }
 
