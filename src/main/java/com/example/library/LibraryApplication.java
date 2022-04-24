@@ -9,5 +9,7 @@ public class LibraryApplication {
     public static void main(String[] args) {
         SpringApplication.run(LibraryApplication.class, args);
     }
+    //Свои Exception'ы
+    //Возвращение объектов, отдельные JSON объекты
 
 }

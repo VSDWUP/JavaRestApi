@@ -1,0 +1,114 @@
+2022-04-23 22:51:39 INFO  AuthorController:56 - Author Sergey Mikhailov deleted
+2022-04-23 23:02:49 INFO  AuthorController:56 - Author Sergey Mikhailovghsa deleted
+2022-04-23 23:09:09 INFO  AuthorController:56 - Author Sergey Mikhadsdsilovghsa deleted
+2022-04-23 23:09:13 ERROR AuthorController:60 - Error deliting author
+2022-04-23 23:09:14 ERROR AuthorController:60 - Error deliting author
+2022-04-23 23:09:15 ERROR AuthorController:60 - Error deliting author
+2022-04-23 23:12:00 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:32 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:34 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:34 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:35 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:36 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:36 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:12:37 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:13:34 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:14:18 INFO  AuthorController:56 - Author Sergey Mikhadsdsilovghsa deleted
+2022-04-23 23:14:30 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:14:31 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:14:31 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:14:32 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:14:33 ERROR AuthorController:60 - Error deliting author with id: 1
+2022-04-23 23:15:36 INFO  AuthorController:56 - Author Sergey Mikhadsdsilovghsa deleted
+2022-04-23 23:24:52 INFO  AuthorController:27 - Created new author: id 1, name:Sergey, surname:Mikhadsdsilovghsa
+2022-04-23 23:25:14 INFO  AuthorController:35 - Requesting author : id1, name:Sergey, surnameMikhadsdsilovghsa
+2022-04-23 23:25:21 ERROR AuthorController:39 - Author not found
+2022-04-23 23:26:17 ERROR AuthorController:66 - Error deliting author with id: 2
+2022-04-23 23:26:28 INFO  AuthorController:62 - Author Sergey Mikhadsdsilovghsa deleted
+2022-04-23 23:27:05 INFO  AuthorController:27 - Created new author: id 2, name:Sergey, surname:Minaev
+2022-04-23 23:27:21 INFO  AuthorController:75 - Requested all authors
+2022-04-23 23:27:32 ERROR AuthorController:39 - Author not found
+2022-04-23 23:27:40 INFO  AuthorController:35 - Requesting author : id2, name:Sergey, surnameMinaev
+2022-04-23 23:27:52 INFO  AuthorController:62 - Author Sergey Minaev deleted
+2022-04-23 23:28:06 ERROR AuthorController:66 - Error deliting author with id: 65
+2022-04-23 23:30:44 INFO  AuthorController:27 - Created new author: id 1, name:Sergey, surname:Minaev
+2022-04-23 23:30:56 INFO  AuthorController:62 - Author Sergey Minaev deleted
+2022-04-23 23:30:59 ERROR AuthorController:66 - Error deliting author with id: 1
+2022-04-23 23:31:01 ERROR AuthorController:66 - Error deliting author with id: 1
+2022-04-23 23:31:01 ERROR AuthorController:66 - Error deliting author with id: 1
+2022-04-23 23:31:11 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:31:12 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:33:26 ERROR AuthorController:39 - Author with id:654 not found
+2022-04-23 23:33:38 ERROR AuthorController:39 - Author with id:654 not found
+2022-04-23 23:33:38 ERROR AuthorController:39 - Author with id:654 not found
+2022-04-23 23:35:10 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:35:11 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:35:11 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:35:12 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:35:56 ERROR AuthorController:66 - Error deliting author with id: 654
+2022-04-23 23:37:11 INFO  AuthorController:27 - Created new author: id 1, name:Sergey, surname:Minaev
+2022-04-23 23:37:12 INFO  AuthorController:27 - Created new author: id 2, name:Sergey, surname:Minaev
+2022-04-23 23:37:13 INFO  AuthorController:27 - Created new author: id 3, name:Sergey, surname:Minaev
+2022-04-23 23:37:15 INFO  AuthorController:27 - Created new author: id 4, name:Sergey, surname:Minaev
+2022-04-23 23:37:15 INFO  AuthorController:27 - Created new author: id 5, name:Sergey, surname:Minaev
+2022-04-23 23:37:16 INFO  AuthorController:27 - Created new author: id 6, name:Sergey, surname:Minaev
+2022-04-23 23:37:16 INFO  AuthorController:27 - Created new author: id 7, name:Sergey, surname:Minaev
+2022-04-23 23:37:23 INFO  AuthorController:75 - Requested all authors
+2022-04-23 23:38:21 INFO  AuthorController:48 - Updated author: id: 5, name:Sergsdfsey, surname: Minfsdfsdaev
+2022-04-23 23:38:30 INFO  AuthorController:52 - Author with id:0 not modified
+2022-04-23 23:39:02 INFO  AuthorController:52 - Author with id:0 not modified
+2022-04-24 20:42:05 ERROR AuthorController:79 - Authors not found
+2022-04-24 20:42:39 INFO  AuthorController:27 - Created author: {id:1, name:Sergey, surname:Minaev}
+2022-04-24 20:43:03 INFO  AuthorController:35 - Get author: {id:1, name:Sergey, surnameMinaev}
+2022-04-24 20:43:34 ERROR AuthorController:39 - Error getting author: {id:2}
+2022-04-24 20:43:46 INFO  AuthorController:75 - Requested all authors
+2022-04-24 20:44:12 ERROR AuthorController:66 - Error deleting author: {id:2}
+2022-04-24 20:44:19 INFO  AuthorController:62 - Deleted author: {id:1, name:Sergey, surnameMinaev}
+2022-04-24 20:44:22 ERROR AuthorController:66 - Error deleting author: {id:1}
+2022-04-24 20:44:25 ERROR AuthorController:66 - Error deleting author: {id:1}
+2022-04-24 20:44:44 INFO  AuthorController:27 - Created author: {id:2, name:Sergey, surname:Minaev}
+2022-04-24 20:44:47 INFO  AuthorController:27 - Created author: {id:3, name:Sergey, surname:Minaev}
+2022-04-24 20:44:47 INFO  AuthorController:27 - Created author: {id:4, name:Sergey, surname:Minaev}
+2022-04-24 20:44:54 INFO  AuthorController:27 - Created author: {id:5, name:Sergey, surname:Minaev}
+2022-04-24 20:44:56 INFO  AuthorController:27 - Created author: {id:6, name:Sergey, surname:Minaev}
+2022-04-24 20:44:57 INFO  AuthorController:27 - Created author: {id:7, name:Sergey, surname:Minaev}
+2022-04-24 20:44:58 INFO  AuthorController:27 - Created author: {id:8, name:Sergey, surname:Minaev}
+2022-04-24 20:44:58 INFO  AuthorController:27 - Created author: {id:9, name:Sergey, surname:Minaev}
+2022-04-24 20:45:18 INFO  AuthorController:48 - Updated author: {id: 9, name:Sergey, surname: Mintaev}
+2022-04-24 20:46:10 INFO  AuthorController:52 - Error updating author:  {id:2578}
+2022-04-24 20:46:11 INFO  AuthorController:52 - Error updating author:  {id:2578}
+2022-04-24 21:10:36 ERROR BookController:79 - Books not found
+2022-04-24 21:13:09 INFO  BookController:27 - Created book: {id:1, title:Духless, author:Sergey Minaev}
+2022-04-24 21:13:13 INFO  BookController:27 - Created book: {id:2, title:Духless, author:Sergey Minaev}
+2022-04-24 21:13:13 INFO  BookController:27 - Created book: {id:3, title:Духless, author:Sergey Minaev}
+2022-04-24 21:13:14 INFO  BookController:27 - Created book: {id:4, title:Духless, author:Sergey Minaev}
+2022-04-24 21:13:14 INFO  BookController:27 - Created book: {id:5, title:Духless, author:Sergey Minaev}
+2022-04-24 21:13:22 INFO  BookController:75 - Requested all books
+2022-04-24 21:23:28 INFO  BookController:48 - Updated book: {id:5, title:The adventures of Sherlock Hlomes, author:Arthur Konan Doyle}
+2022-04-24 21:23:42 INFO  BookController:48 - Updated book: {id:5, title:The adventures of Sherlock Holmes, author:Arthur Konan Doyle}
+2022-04-24 21:23:56 INFO  BookController:62 - Deleted book: {id:4, title:Духless, author:Sergey Minaev}
+2022-04-24 21:23:57 ERROR BookController:66 - Error deleting book: {id:4}
+2022-04-24 21:25:03 ERROR BookController:39 - Error getting book: {id:4}
+2022-04-24 21:25:04 ERROR BookController:39 - Error getting book: {id:4}
+2022-04-24 21:25:08 INFO  BookController:35 - Get book: {id:3, title:Духless, author:Sergey Minaev}
+2022-04-24 21:25:25 INFO  BookController:62 - Deleted book: {id:1, title:Духless, author:Sergey Minaev}
+2022-04-24 21:25:29 INFO  BookController:62 - Deleted book: {id:2, title:Духless, author:Sergey Minaev}
+2022-04-24 21:25:32 INFO  BookController:62 - Deleted book: {id:3, title:Духless, author:Sergey Minaev}
+2022-04-24 21:25:36 ERROR BookController:66 - Error deleting book: {id:4}
+2022-04-24 21:25:39 INFO  BookController:62 - Deleted book: {id:5, title:The adventures of Sherlock Holmes, author:Arthur Konan Doyle}
+2022-04-24 21:25:46 ERROR BookController:79 - Books not found
+2022-04-24 21:38:50 INFO  BookController:27 - Created book: {id:1, title:The adventures of Sherlock Holmes, author:Arthur Konan Doyle}
+2022-04-24 21:39:01 INFO  BookController:75 - Requested all books
+2022-04-24 21:39:46 INFO  BookController:48 - Updated book: {id:1, title:ДухLess, author:Serge Minaev}
+2022-04-24 21:39:54 INFO  BookController:62 - Deleted book: {id:1, title:ДухLess, author:Serge Minaev}
+2022-04-24 21:39:56 ERROR BookController:66 - Error deleting book: {id:1}
+2022-04-24 21:40:00 ERROR BookController:39 - Error getting book: {id:1}
+2022-04-24 21:40:07 ERROR BookController:79 - Books not found
+2022-04-24 21:40:52 ERROR AuthorController:79 - Authors not found
+2022-04-24 21:41:31 INFO  AuthorController:27 - Created author: {id:1, name:Serge, surname:Minaev}
+2022-04-24 21:41:37 INFO  AuthorController:75 - Requested all authors
+2022-04-24 21:41:53 INFO  AuthorController:48 - Updated author: {id: 1, name:Andrey, surname:Minaev}
+2022-04-24 21:42:08 INFO  AuthorController:62 - Deleted author: {id:1, name:Andrey, surnameMinaev}
+2022-04-24 21:42:09 ERROR AuthorController:66 - Error deleting author: {id:1}
+2022-04-24 21:42:20 ERROR AuthorController:39 - Error getting author: {id:1}
+2022-04-24 21:42:41 ERROR AuthorController:79 - Authors not found

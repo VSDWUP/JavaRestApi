@@ -23,11 +23,9 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book readBook(int id) {
+    public Book getBook(int id) {
         return Books.get(id);
     }
-
-
 
     @Override
     public boolean updateBook(Book book, int id) {
@@ -47,7 +45,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<Book> readAllBooks() {
+    public List<Book> getAllBooks() {
         return new ArrayList<>(Books.values());
     }
 }
