@@ -29,15 +29,17 @@ public class AuthorController {
     }
 
     @GetMapping(value = "/author/{id}")
-    public ResponseEntity <?> get(@PathVariable(value = "id") int id){
+    //return Author 200 обработка статусов в Exception'ах Controller advice @ErrorHandler
+    //Отдельный класс @ControllerAdvice, добавляются методы с @ExceptionHandler
+    //Spring rest error mapping
+    //SpringTest на эдпоинты Mock на storage Junit Mockito
+    public Author get(@PathVariable(value = "id") int id){
         final Author author = authorService.getAuthor(id);
         if (author != null){
-            log.info("Get author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
-            return new ResponseEntity<>(author, HttpStatus.OK);
+            return author;
         }
         else {
-            log.error("Error getting author: {id:" + id + "}");
-            return new ResponseEntity<>("AUTHOR NOT FOUND",HttpStatus.NOT_FOUND);
+            return null;
         }
     }
 

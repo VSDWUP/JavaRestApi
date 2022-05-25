@@ -112,3 +112,14 @@
 2022-04-24 21:42:09 ERROR AuthorController:66 - Error deleting author: {id:1}
 2022-04-24 21:42:20 ERROR AuthorController:39 - Error getting author: {id:1}
 2022-04-24 21:42:41 ERROR AuthorController:79 - Authors not found
+2022-04-27 09:33:33 INFO  LogConverterInvocationHandler:17 - Executed printClasswith parameters[Example(exampleInt=1, exampleDouble=1.0, exampleString=1, exampleFloat=1.0, exampleBoolean=true, exampleLong=1, exampleChar=a)]
+2022-04-27 09:34:03 INFO  LogConverterInvocationHandler:17 - Executed printClasswith parameters[Example(exampleInt=1, exampleDouble=1.0, exampleString=1, exampleFloat=1.0, exampleBoolean=true, exampleLong=1, exampleChar=a)]
+2022-04-27 17:23:52 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
+2022-04-27 17:24:07 INFO  AuthorController:75 - Requested all authors
+2022-04-27 17:24:12 INFO  AuthorController:35 - Get author: {id:1, name:Andrey, surname:Ivanov}
+2022-04-27 17:24:16 ERROR AuthorController:39 - Error getting author: {id:23}
+2022-04-27 17:24:25 INFO  AuthorController:35 - Get author: {id:1, name:Andrey, surname:Ivanov}
+2022-05-18 19:32:20 ERROR AuthorController:43 - Error getting author: {id:1}
+2022-05-18 19:32:33 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
+2022-05-18 19:32:40 INFO  AuthorController:39 - Get author: {id:1, name:Andrey, surname:Ivanov}
+2022-05-18 19:34:43 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
