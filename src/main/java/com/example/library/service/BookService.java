@@ -7,9 +7,9 @@ import java.util.List;
 public interface BookService {
 
     void createBook (Book book);
-    Book getBook (int id);
-    boolean updateBook(Book book, int id);
-    boolean deleteBook(int id);
+    Book getBook (long id);
+    boolean updateBook(Book book, long id);
+    boolean deleteBook(long id);
     List<Book> getAllBooks ();
 
 

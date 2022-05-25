@@ -123,3 +123,39 @@
 2022-05-18 19:32:33 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
 2022-05-18 19:32:40 INFO  AuthorController:39 - Get author: {id:1, name:Andrey, surname:Ivanov}
 2022-05-18 19:34:43 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
+2022-05-25 09:45:13 INFO  AuthorController:27 - Created author: {id:1, name:Andrey, surname:Ivanov}
+2022-05-25 15:41:28 INFO  BookController:39 - Get book: {id:323, title:DFsdfsd, author:fsdfsd}
+2022-05-25 15:41:31 INFO  BookController:39 - Get book: {id:1, title:Pushkin, author:Alexander}
+2022-05-25 15:51:26 INFO  BookController:40 - Get book: {id:1, title:Pushkin, author:Alexander}
+2022-05-25 15:51:31 INFO  BookController:40 - Get book: {id:2, title:Dostoevskiy, author:Fedor}
+2022-05-25 15:51:34 INFO  BookController:40 - Get book: {id:323, title:DFsdfsd, author:fsdfsd}
+2022-05-25 15:51:39 INFO  BookController:83 - Requested all books
+2022-05-25 15:57:20 INFO  BookController:36 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 15:57:27 INFO  BookController:77 - Requested all books
+2022-05-25 16:08:21 INFO  BookController:36 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 16:08:35 INFO  BookController:36 - Created book: {id:2, title:Sergdsvcsdey, author:Dovcdscdslatov}
+2022-05-25 16:08:43 INFO  BookController:88 - Requested all books
+2022-05-25 16:08:51 INFO  BookController:74 - Deleted book with : {id:2}
+2022-05-25 16:09:00 INFO  BookController:88 - Requested all books
+2022-05-25 16:17:07 INFO  BookController:100 - Requested all books
+2022-05-25 16:17:29 INFO  BookController:36 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 16:17:36 INFO  BookController:36 - Created book: {id:2, title:Sefsdfsdrgey, author:Dovlatofsdfsdv}
+2022-05-25 16:17:40 INFO  BookController:100 - Requested all books
+2022-05-25 16:17:58 INFO  BookController:61 - Updated book: {id:2, title:Sefsdsfsdfdfsdrgey, author:Dovlatofsdfsdfsdfsdv}
+2022-05-25 16:18:05 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:20 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:21 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:21 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:22 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:23 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:23 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:24 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:24 INFO  BookController:100 - Requested all books
+2022-05-25 16:18:29 INFO  BookController:43 - Get book: {id:2, title:Sefsdfsdrgey, author:Dovlatofsdfsdv}
+2022-05-25 16:22:34 INFO  BookController:36 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 16:22:50 INFO  BookController:36 - Created book: {id:1, title:Ssdvsdy, author:Dfsdgrrdg}
+2022-05-25 16:22:55 INFO  BookController:36 - Created book: {id:2, title:Ssdvsdy, author:Dfsdgrrdg}
+2022-05-25 16:23:00 INFO  BookController:100 - Requested all books
+2022-05-25 16:23:28 INFO  BookController:36 - Created book: {id:3, title:32423Scsdscsdcsddvsdy, author:23423Dfsdgrrdg}
+2022-05-25 16:23:53 INFO  BookController:61 - Updated book: {id:3, title:1, author:2}
+2022-05-25 16:24:01 INFO  BookController:100 - Requested all books
