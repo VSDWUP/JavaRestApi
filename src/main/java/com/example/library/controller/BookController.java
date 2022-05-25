@@ -29,9 +29,6 @@ public class BookController {
 
     @PostMapping(value = "/book")
     public ResponseEntity <?> create(@RequestBody Book book){
-        /*bookService.createBook(book);
-        log.info("Created book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
-        return new ResponseEntity<>(book,HttpStatus.CREATED);*/
         bookService.createBook(book);
         log.info("Created book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
         return new ResponseEntity<>(book, HttpStatus.CREATED);
@@ -46,16 +43,6 @@ public class BookController {
 
     @PutMapping(value = "book/{id}")
     public ResponseEntity <?> update(@PathVariable(name = "id") long id, @RequestBody Book book){
-        //final boolean updated = bookService.updateBook(book,id);
-        //if (updated == true){
-        //    log.info("Updated book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
-        //    return new ResponseEntity<>(book,HttpStatus.OK);
-        //}
-        //else {
-        //    log.error("Error updating book: {id:" + id + "}");
-        //    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        //}
-
         boolean marker = bookService.updateBook(book,id);
         if (marker == true){
             log.info("Updated book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
@@ -63,7 +50,7 @@ public class BookController {
         }
         else {
             log.error("Error updating book: {id:" + id + "}");
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(book,HttpStatus.NOT_FOUND);
         }
 
 
@@ -71,16 +58,6 @@ public class BookController {
 
     @DeleteMapping(value = "book/{id}")
     public ResponseEntity<?> delete (@PathVariable(name = "id") int id){
-        /*final Book book = bookService.getBook(id);
-        final boolean deleted = bookService.deleteBook(id);
-        if (deleted == true){
-            log.info("Deleted book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
-            return new ResponseEntity<>("BOOK DELETED",HttpStatus.OK);
-        }
-        else {
-            log.error("Error deleting book: {id:" + id + "}");
-            return new ResponseEntity<>("BOOK NOT FOUND", HttpStatus.NOT_FOUND);
-        }*/
         boolean marker = bookService.deleteBook(id);
         if (marker == true){
             log.info("Deleted book with : {id:" + id + "}");

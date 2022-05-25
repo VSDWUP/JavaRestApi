@@ -19,10 +19,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void createBook(Book book) {
-        /*final int bookId = Book_Id_Holder.incrementAndGet();
-        book.setId(bookId);
-        Books.put(bookId,book);*/
-        Book _book = bookRepository.save(new Book(book.getId(),book.getTitle(),book.getAuthor()));
+        bookRepository.save(new Book(book.getId(),book.getTitle(),book.getAuthor()));
 
     }
 
@@ -39,15 +36,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public boolean updateBook(Book book, long id) {
-        /*if (Books.containsKey(id)){
-            book.setId(id);
-            Books.put(id,book);
-            return true;
-        }
-        else{
-            return false;
-        }*/
-
         Optional<Book> bookData = bookRepository.findById(id);
         if (bookData.isPresent()) {
             Book _book = bookData.get();
@@ -64,7 +52,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public boolean deleteBook(long id) {
-        /*return Books.remove(id) != null;*/
         Optional<Book> bookData = bookRepository.findById(id);
         if (bookData.isEmpty() ) {
             return false;//Заглушка
@@ -76,7 +63,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getAllBooks() {
-        //return new ArrayList<>(Books.values());
         List<Book> books = new ArrayList<Book>();
         bookRepository.findAll().forEach(books::add);
         if (!books.isEmpty()){

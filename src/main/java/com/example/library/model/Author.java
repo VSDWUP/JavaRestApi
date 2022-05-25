@@ -1,15 +1,34 @@
 package com.example.library.model;
 
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "AUTHORS")
+@EnableAutoConfiguration
 public class Author {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id",nullable = false)
     private long id;
+
+    @Column(name = "name", length = 64, nullable = false)
     private String name;
+
+    @Column(name = "surname", length = 64, nullable = false)
     private String surname;
 
     public Author(long id, String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;
+    }
+
+    public Author(){
+
     }
 
     public long getId() {

@@ -7,8 +7,8 @@ import java.util.List;
 public interface AuthorService {
 
     void createAuthor(Author author);
-    Author getAuthor(int id);
-    boolean updateAuthor(Author author, int id);
-    boolean deleteAuthor(int id);
+    Author getAuthor(long id);
+    boolean updateAuthor(Author author, long id);
+    boolean deleteAuthor(long id);
     List<Author> getAllAuthors();
 }

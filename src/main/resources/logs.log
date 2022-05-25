@@ -159,3 +159,16 @@
 2022-05-25 16:23:28 INFO  BookController:36 - Created book: {id:3, title:32423Scsdscsdcsddvsdy, author:23423Dfsdgrrdg}
 2022-05-25 16:23:53 INFO  BookController:61 - Updated book: {id:3, title:1, author:2}
 2022-05-25 16:24:01 INFO  BookController:100 - Requested all books
+2022-05-25 18:07:06 INFO  BookController:77 - Requested all books
+2022-05-25 18:07:13 INFO  BookController:40 - Get book: {id:1, title:Pushkin, author:Alexander}
+2022-05-25 18:07:46 INFO  BookController:48 - Updated book: {id:1, title:1, author:2}
+2022-05-25 18:07:54 INFO  BookController:63 - Deleted book with : {id:1}
+2022-05-25 18:08:03 INFO  BookController:77 - Requested all books
+2022-05-25 18:40:04 INFO  AuthorController:32 - Created author: {id:1, name:Name, surname:Surname}
+2022-05-25 18:40:19 INFO  AuthorController:113 - Requested all authors
+2022-05-25 18:40:31 INFO  AuthorController:32 - Created author: {id:2, name:Name, surname:Surname}
+2022-05-25 18:40:39 INFO  AuthorController:113 - Requested all authors
+2022-05-25 18:40:59 INFO  AuthorController:69 - Updated author: {id:2, name:NAEME, surname:SURNAEME}
+2022-05-25 18:41:08 INFO  AuthorController:113 - Requested all authors
+2022-05-25 18:41:24 INFO  AuthorController:92 - Deleted author with : {id:2}
+2022-05-25 18:41:29 INFO  AuthorController:113 - Requested all authors
