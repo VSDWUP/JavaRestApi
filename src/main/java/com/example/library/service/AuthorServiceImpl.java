@@ -1,5 +1,6 @@
 package com.example.library.service;
 
+import com.example.library.exceptions.*;
 import com.example.library.model.Author;
 import com.example.library.model.Book;
 import com.example.library.repository.AuthorRepository;
@@ -27,7 +28,7 @@ public class AuthorServiceImpl implements AuthorService{
     public Author getAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
-            return new Author(323,"DFsdfsd","fsdfsd");//Заглушка
+            throw new AuthorNotFoundException("Author not found");
         } else {
             Author author = authorData.get();
             return author;
@@ -46,7 +47,7 @@ public class AuthorServiceImpl implements AuthorService{
             return true;
         }
         else {
-            return false;
+            throw new AuthorNotUpdatedException("Author not found");
         }
     }
 
@@ -54,7 +55,7 @@ public class AuthorServiceImpl implements AuthorService{
     public boolean deleteAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
-            return false;//Заглушка
+            throw new AuthorNotDeletedException("Author not found");
         } else {
             authorRepository.deleteById(id);
             return true;
@@ -69,7 +70,7 @@ public class AuthorServiceImpl implements AuthorService{
             return authors;
         }
         else {
-            return new ArrayList<Author>(); //Заглушка
+            throw new NoAuthorsFoundException("There are no authors");
         }
     }
 }

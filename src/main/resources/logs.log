@@ -172,3 +172,32 @@
 2022-05-25 18:41:08 INFO  AuthorController:113 - Requested all authors
 2022-05-25 18:41:24 INFO  AuthorController:92 - Deleted author with : {id:2}
 2022-05-25 18:41:29 INFO  AuthorController:113 - Requested all authors
+2022-05-25 18:53:53 INFO  AuthorController:32 - Created author: {id:4343, name:NAEME, surname:SURNAEME}
+2022-05-25 19:09:28 INFO  AuthorController:32 - Created author: {id:4343, name:NAEME, surname:SURNAEME}
+2022-05-25 19:09:33 INFO  AuthorController:32 - Created author: {id:1, name:NAEME, surname:SURNAEME}
+2022-05-25 19:09:37 INFO  AuthorController:78 - Requested all authors
+2022-05-25 19:09:48 INFO  AuthorController:32 - Created author: {id:2, name:NAEME, surname:SURNAEME}
+2022-05-25 19:09:53 INFO  AuthorController:78 - Requested all authors
+2022-05-25 19:09:59 INFO  AuthorController:44 - Get author: {id:323, name:DFsdfsd, surname:fsdfsd}
+2022-05-25 19:10:25 INFO  BookController:34 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 19:10:30 INFO  BookController:78 - Requested all books
+2022-05-25 19:10:37 INFO  BookController:78 - Requested all books
+2022-05-25 19:14:00 INFO  BookController:34 - Created book: {id:1, title:Sergey, author:Dovlatov}
+2022-05-25 20:06:04 INFO  AuthorController:32 - Created author: {id:1, name:Sergey, surname:Dovlatov}
+2022-05-25 20:06:09 INFO  AuthorController:44 - Get author: {id:323, name:DFsdfsd, surname:fsdfsd}
+2022-06-01 09:09:25 INFO  AuthorController:32 - Created author: {id:1, name:Sergey, surname:Dovlatov}
+2022-06-01 09:09:47 INFO  AuthorController:44 - Get author: {id:1, name:Sergey, surname:Dovlatov}
+2022-06-01 09:09:51 INFO  AuthorController:44 - Get author: {id:323, name:DFsdfsd, surname:fsdfsd}
+2022-06-01 09:45:00 INFO  AuthorController:32 - Created author: {id:1, name:Sergey, surname:Dovlatov}
+2022-06-01 09:45:12 INFO  AuthorController:32 - Created author: {id:2, name:Sergey, surname:Minaev}
+2022-06-01 09:45:59 INFO  BookController:32 - Created book: {id:2, title:ДухLess, author:Sergey Minaev}
+2022-06-01 09:46:32 INFO  BookController:32 - Created book: {id:1, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 09:46:38 INFO  BookController:70 - Requested all books
+2022-06-01 09:46:50 INFO  AuthorController:78 - Requested all authors
+2022-06-01 09:47:33 INFO  AuthorController:53 - Updated author: {id:1, name:Sergey, surname:Mihalkov}
+2022-06-01 09:47:41 INFO  AuthorController:66 - Deleted author with : {id:1}
+2022-06-01 09:48:36 INFO  BookController:60 - Deleted book with : {id:3}
+2022-06-01 09:49:21 INFO  BookController:70 - Requested all books
+2022-06-01 09:50:41 INFO  BookController:39 - Get book: {id:4, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 09:50:54 INFO  BookController:47 - Updated book: {id:4, title:Wfsdar and Peace, author:Lev Tolstoy}
+2022-06-01 09:51:05 INFO  BookController:60 - Deleted book with : {id:4}

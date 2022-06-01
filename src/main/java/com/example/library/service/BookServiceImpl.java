@@ -1,10 +1,12 @@
 package com.example.library.service;
 
+import com.example.library.exceptions.BookNotDeletedException;
+import com.example.library.exceptions.BookNotFoundException;
+import com.example.library.exceptions.BookNotUpdatedException;
+import com.example.library.exceptions.NoBooksFoundException;
 import com.example.library.model.Book;
 import com.example.library.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -20,14 +22,13 @@ public class BookServiceImpl implements BookService {
     @Override
     public void createBook(Book book) {
         bookRepository.save(new Book(book.getId(),book.getTitle(),book.getAuthor()));
-
     }
 
     @Override
     public Book getBook(long id) {
         Optional<Book> bookData = bookRepository.findById(id);
         if (bookData.isEmpty() ) {
-            return new Book(323,"DFsdfsd","fsdfsd");//Заглушка
+            throw new BookNotFoundException("Book not found");
         } else {
             Book book = bookData.get();
             return book;
@@ -46,7 +47,7 @@ public class BookServiceImpl implements BookService {
             return true;
         }
         else {
-            return false;
+            throw new BookNotUpdatedException("Error finding book for updating");
         }
     }
 
@@ -54,7 +55,7 @@ public class BookServiceImpl implements BookService {
     public boolean deleteBook(long id) {
         Optional<Book> bookData = bookRepository.findById(id);
         if (bookData.isEmpty() ) {
-            return false;//Заглушка
+            throw new BookNotDeletedException("Error finding book for deleteing");
         } else {
             bookRepository.deleteById(id);
             return true;
@@ -69,7 +70,7 @@ public class BookServiceImpl implements BookService {
             return books;
         }
         else {
-            return new ArrayList<Book>();
+            throw new NoBooksFoundException("There are no books");
         }
     }
 }

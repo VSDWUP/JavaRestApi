@@ -1,5 +1,6 @@
 package com.example.library.controller;
 
+import com.example.library.exceptions.BookNotFoundException;
 import com.example.library.model.Book;
 import com.example.library.repository.BookRepository;
 import com.example.library.service.BookService;
@@ -9,9 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -31,11 +30,11 @@ public class BookController {
     public ResponseEntity <?> create(@RequestBody Book book){
         bookService.createBook(book);
         log.info("Created book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
-        return new ResponseEntity<>(book, HttpStatus.CREATED);
+        return new ResponseEntity<>(book,HttpStatus.CREATED);
     }
 
     @GetMapping(value = "book/{id}")
-    public ResponseEntity <?> read(@PathVariable(name = "id") long id){
+    public ResponseEntity <?> read(@PathVariable(name = "id") long id) throws BookNotFoundException {
         final Book book = bookService.getBook(id);
         log.info("Get book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
         return new ResponseEntity<>(book,HttpStatus.OK);
@@ -52,30 +51,24 @@ public class BookController {
             log.error("Error updating book: {id:" + id + "}");
             return new ResponseEntity<>(book,HttpStatus.NOT_FOUND);
         }
-
-
     }
 
     @DeleteMapping(value = "book/{id}")
-    public ResponseEntity<?> delete (@PathVariable(name = "id") int id){
+    public void delete (@PathVariable(name = "id") int id){
         boolean marker = bookService.deleteBook(id);
         if (marker == true){
             log.info("Deleted book with : {id:" + id + "}");
-            return new ResponseEntity<>("BOOK DELETED",HttpStatus.OK);
         }
         else {
             log.error("Error deleting book: {id:" + id + "}");
-            return new ResponseEntity<>("BOOK NOT FOUND", HttpStatus.NOT_FOUND);
         }
-
-
     }
 
     @GetMapping(value = "/books")
-    public ResponseEntity <?> readAll(){
+    public List <Book> readAll(){
         List <Book> bookList = bookService.getAllBooks();
         log.info("Requested all books");
-        return new ResponseEntity<>(bookList,HttpStatus.OK);
+        return bookList;
 
     }
 }
