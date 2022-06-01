@@ -223,3 +223,36 @@
 2022-06-01 10:39:32 ERROR AuthorController:65 - Error deleting Author with id: {2}
 2022-06-01 10:39:41 INFO  AuthorController:69 - Deleted author with: {id:1}
 2022-06-01 10:39:42 ERROR AuthorController:65 - Error deleting Author with id: {1}
+2022-06-01 10:43:12 INFO  AuthorController:27 - Created author: {id:1, name:null, surname:null}
+2022-06-01 10:43:23 INFO  AuthorController:29 - Created book: {id:1, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 10:44:07 ERROR AuthorController:36 - Book with id: {1} not found
+2022-06-01 10:44:11 INFO  AuthorController:40 - Get book: {id:2, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 10:45:00 INFO  AuthorController:54 - Updated book: {id:2, title:War and Peace, author:Lev Nikolayevich Tolstoy}
+2022-06-01 10:45:24 INFO  BookController:51 - Deleted book with : {id:2}
+2022-06-01 10:50:41 INFO  AuthorController:29 - Created book: {id:1, title:War and Peace, author:Lev Nikolayevich Tolstoy}
+2022-06-01 10:51:00 INFO  AuthorController:40 - Get book: {id:1, title:War and Peace, author:Lev Nikolayevich Tolstoy}
+2022-06-01 10:51:04 INFO  BookController:51 - Deleted book with : {id:1}
+2022-06-01 10:57:57 ERROR AuthorController:82 - There are no Authors found
+2022-06-01 10:58:22 INFO  AuthorController:27 - Created author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 10:58:27 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 10:58:28 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 10:58:34 INFO  AuthorController:78 - Requested all authors
+2022-06-01 10:58:42 INFO  AuthorController:69 - Deleted author with: {id:1}
+2022-06-01 10:59:08 ERROR AuthorController:82 - There are no Authors found
+2022-06-01 11:02:50 INFO  AuthorController:27 - Created author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:02:56 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:03:06 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:03:06 INFO  AuthorController:69 - Deleted author with: {id:1}
+2022-06-01 11:03:53 INFO  AuthorController:27 - Created author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:03:56 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:04:01 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:04:01 INFO  AuthorController:69 - Deleted author with: {id:1}
+2022-06-01 11:05:02 INFO  AuthorController:27 - Created author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:05:06 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:05:10 INFO  AuthorController:39 - Get author: {id:1, name:Lev, surname:Tolstoy}
+2022-06-01 11:05:10 INFO  AuthorController:69 - Deleted author with: {id:1}
+2022-06-01 11:05:16 ERROR AuthorController:35 - Author with id: {1} not found
+2022-06-01 11:09:33 INFO  AuthorController:29 - Created book: {id:1, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 11:09:38 INFO  AuthorController:40 - Get book: {id:1, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 11:09:45 INFO  AuthorController:40 - Get book: {id:1, title:War and Peace, author:Lev Tolstoy}
+2022-06-01 11:09:45 INFO  AuthorController:69 - Deleted book with : {id:1}

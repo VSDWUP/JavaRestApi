@@ -1,17 +1,14 @@
 package com.example.library.controller;
 
 import com.example.library.model.Author;
-import com.example.library.model.Book;
 import com.example.library.repository.AuthorRepository;
 import com.example.library.service.AuthorService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.apache.log4j.Logger;
 
-import java.awt.*;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:8081")
@@ -50,15 +47,17 @@ public class AuthorController {
 
     @DeleteMapping(value = "/author/{id}")
     public ResponseEntity delete(@PathVariable(value = "id") int id){
+        Author author =  authorService.getAuthor(id);
         authorService.deleteAuthor(id);
-        return new ResponseEntity<>("AUTHOR DELETED",HttpStatus.OK);
+        String str = "Deleted Author:\n id: " + author.getId() + ",\n name: " + author.getName() + ",\n surname: " + author.getSurname();
+        return new ResponseEntity<>(str,HttpStatus.OK);
 
     }
 
     @GetMapping(value = "/authors")
-    public ResponseEntity <?> getAuthors(){
+    public List<Author> getAuthors(){
         List <Author> authorList = authorService.getAllAuthors();
-        return new ResponseEntity<>(authorList,HttpStatus.OK);
+        return authorList;
     }
 
 

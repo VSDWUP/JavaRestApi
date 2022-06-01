@@ -46,9 +46,11 @@ public class BookController {
     }
 
     @DeleteMapping(value = "book/{id}")
-    public void delete (@PathVariable(name = "id") int id){
+    public ResponseEntity <?> delete (@PathVariable(name = "id") int id){
+        Book book = bookService.getBook(id);
         bookService.deleteBook(id);
-        log.info("Deleted book with : {id:" + id + "}");
+        String str = "Deleted Book:\n id: " + book.getId() + ",\n title: " + book.getTitle() + ",\n author: " + book.getAuthor();
+        return new ResponseEntity<>(str,HttpStatus.OK);
     }
 
     @GetMapping(value = "/books")

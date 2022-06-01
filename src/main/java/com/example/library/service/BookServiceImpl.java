@@ -66,6 +66,7 @@ public class BookServiceImpl implements BookService {
             log.error("Error deleting Book with id: {" + id + "}");
             throw new BookNotDeletedException("Error deleting book");
         } else {
+            log.info("Deleted book with : {id:" + id + "}");
             bookRepository.deleteById(id);
         }
     }
