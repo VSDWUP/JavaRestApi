@@ -1,6 +1,7 @@
 package com.example.library.controller;
 
 import com.example.library.model.Author;
+import com.example.library.model.Book;
 import com.example.library.repository.AuthorRepository;
 import com.example.library.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,8 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
+import static com.example.library.service.AuthorServiceImpl.Author_Id_Holder;
+
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 public class AuthorController {
@@ -18,6 +21,7 @@ public class AuthorController {
     AuthorRepository authorRepository;
     private final AuthorService authorService;
     private static final Logger log = Logger.getLogger(AuthorController.class);
+
 
     @Autowired
     public AuthorController(AuthorService authorService) {
@@ -27,7 +31,8 @@ public class AuthorController {
     @PostMapping(value = "/author")
     public ResponseEntity <?> create(@RequestBody Author author){
         authorService.createAuthor(author);
-        return new ResponseEntity<>(author,HttpStatus.CREATED);
+        Author author_return = authorService.getAuthor(Author_Id_Holder.get());
+        return new ResponseEntity<>(author_return,HttpStatus.CREATED);
     }
 
     @GetMapping(value = "/author/{id}")
@@ -40,7 +45,8 @@ public class AuthorController {
     @PutMapping(value = "/author/{id}")
     public ResponseEntity <?> update(@PathVariable(value = "id") int id, @RequestBody Author author){
         authorService.updateAuthor(author,id);
-        return new ResponseEntity<>(author,HttpStatus.OK);
+        Author author_return = authorService.getAuthor(id);
+        return new ResponseEntity<>(author_return,HttpStatus.OK);
 
     }
 

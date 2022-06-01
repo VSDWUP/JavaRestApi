@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
+import static com.example.library.service.BookServiceImpl.Book_Id_Holder;
+
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 public class BookController {
@@ -29,7 +31,8 @@ public class BookController {
     @PostMapping(value = "/book")
     public ResponseEntity <?> create(@RequestBody Book book){
         bookService.createBook(book);
-        return new ResponseEntity<>(book,HttpStatus.CREATED);
+        Book book_return = bookService.getBook(Book_Id_Holder.get());
+        return new ResponseEntity<>(book_return,HttpStatus.CREATED);
     }
 
     @GetMapping(value = "book/{id}")
@@ -41,7 +44,8 @@ public class BookController {
     @PutMapping(value = "book/{id}")
     public ResponseEntity <?> update(@PathVariable(name = "id") long id, @RequestBody Book book){
         bookService.updateBook(book,id);
-        return new ResponseEntity<>(book,HttpStatus.OK);
+        Book book_return = bookService.getBook(id);
+        return new ResponseEntity<>(book_return,HttpStatus.OK);
 
     }
 

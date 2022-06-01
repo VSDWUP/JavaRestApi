@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class BookServiceImpl implements BookService {
     private static final Map<Long, Book> Books = new HashMap<>();
-    private static final AtomicInteger Book_Id_Holder = new AtomicInteger();
+    public static final AtomicInteger Book_Id_Holder = new AtomicInteger();
     private static final Logger log = Logger.getLogger(AuthorController.class);
 
     @Autowired
@@ -25,8 +25,8 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void createBook(Book book) {
-        bookRepository.save(new Book(book.getId(),book.getTitle(),book.getAuthor()));
-        log.info("Created book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
+        bookRepository.save(new Book(Book_Id_Holder.incrementAndGet(),book.getTitle(),book.getAuthor()));
+        log.info("Created book: {id:" + Book_Id_Holder.get() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
     }
 
     @Override
@@ -47,11 +47,10 @@ public class BookServiceImpl implements BookService {
         Optional<Book> bookData = bookRepository.findById(id);
         if (bookData.isPresent()) {
             Book _book = bookData.get();
-            _book.setId(book.getId());
             _book.setTitle(book.getTitle());
             _book.setAuthor(book.getAuthor());
             bookRepository.save(_book);
-            log.info("Updated book: {id:" + book.getId() + ", title:" + book.getTitle() + ", author:" + book.getAuthor() + "}");
+            log.info("Updated book: {id:" + _book.getId() + ", title:" + _book.getTitle() + ", author:" + _book.getAuthor() + "}");
         }
         else {
             log.error("Error updating Book with id: {" + id + "}");

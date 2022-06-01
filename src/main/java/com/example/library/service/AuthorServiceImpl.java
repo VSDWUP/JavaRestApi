@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AuthorServiceImpl implements AuthorService{
 
     private static final Map <Integer,Author> Authors = new HashMap<>();
-    private static final AtomicInteger Author_Id_Holder = new AtomicInteger();
+    public static final AtomicInteger Author_Id_Holder = new AtomicInteger();
     private static final Logger log = Logger.getLogger(AuthorController.class);
 
     @Autowired
@@ -24,8 +24,8 @@ public class AuthorServiceImpl implements AuthorService{
 
     @Override
     public void createAuthor(Author author) {
+        authorRepository.save(new Author(Author_Id_Holder.incrementAndGet(),author.getName(),author.getSurname()));
         log.info("Created author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
-        authorRepository.save(new Author(author.getId(),author.getName(),author.getSurname()));
     }
 
     @Override
@@ -46,11 +46,10 @@ public class AuthorServiceImpl implements AuthorService{
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isPresent()) {
             Author _author = authorData.get();
-            _author.setId(author.getId());
             _author.setName(author.getName());
             _author.setSurname(author.getSurname());
             authorRepository.save(_author);
-            log.info("Updated author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
+            log.info("Updated author: {id:" + _author.getId() + ", name:" + _author.getName() + ", surname:" + _author.getSurname() + "}");
         }
         else {
             log.error("Error updating Author with id: {" + id + "}");
