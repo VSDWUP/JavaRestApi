@@ -605,3 +605,211 @@
 2022-06-01 16:11:38 INFO  AuthorController:52 - Updated author: {id:7, name:NO, surname:NONO}
 2022-06-01 16:11:38 INFO  AuthorController:39 - Get author: {id:7, name:NO, surname:NONO}
 2022-06-01 16:11:47 INFO  AuthorController:77 - Requested all authors
+2022-06-01 16:15:34 INFO  AuthorController:28 - Created author: {id:0, name:NO, surname:NONO}
+2022-06-01 16:15:34 INFO  AuthorController:39 - Get author: {id:1, name:NO, surname:NONO}
+2022-06-01 16:15:35 INFO  AuthorController:28 - Created author: {id:0, name:NO, surname:NONO}
+2022-06-01 16:15:35 INFO  AuthorController:39 - Get author: {id:2, name:NO, surname:NONO}
+2022-06-01 16:15:36 INFO  AuthorController:28 - Created author: {id:0, name:NO, surname:NONO}
+2022-06-01 16:15:36 INFO  AuthorController:39 - Get author: {id:3, name:NO, surname:NONO}
+2022-06-01 16:15:37 INFO  AuthorController:28 - Created author: {id:0, name:NO, surname:NONO}
+2022-06-01 16:15:37 INFO  AuthorController:39 - Get author: {id:4, name:NO, surname:NONO}
+2022-06-01 16:15:38 INFO  AuthorController:28 - Created author: {id:0, name:NO, surname:NONO}
+2022-06-01 16:15:38 INFO  AuthorController:39 - Get author: {id:5, name:NO, surname:NONO}
+2022-06-01 16:15:59 ERROR AuthorController:55 - Error updating Author with id: {4353}
+2022-06-01 18:37:09 INFO  AuthorController:29 - Created book: {id:1, title:gdf, author:1234}
+2022-06-01 18:37:10 INFO  AuthorController:40 - Get book: {id:1, title:gdf, author:1234}
+2022-06-01 18:38:05 INFO  AuthorController:53 - Updated book: {id:1, title:gvfddf, author:12vgdf34}
+2022-06-01 18:38:09 INFO  AuthorController:53 - Updated book: {id:1, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:15 ERROR AuthorController:56 - Error updating Book with id: {1}
+2022-06-01 18:39:21 INFO  AuthorController:29 - Created book: {id:1, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:21 INFO  AuthorController:40 - Get book: {id:1, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:23 INFO  AuthorController:29 - Created book: {id:2, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:23 INFO  AuthorController:40 - Get book: {id:2, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:23 INFO  AuthorController:29 - Created book: {id:3, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:23 INFO  AuthorController:40 - Get book: {id:3, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:24 INFO  AuthorController:29 - Created book: {id:4, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:24 INFO  AuthorController:40 - Get book: {id:4, title:gvfddf, author:12vgdf34}
+2022-06-01 18:39:32 INFO  AuthorController:53 - Updated book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:39:32 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:39:34 INFO  AuthorController:53 - Updated book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:39:34 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:06 INFO  AuthorController:29 - Created book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:06 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:07 INFO  AuthorController:29 - Created book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:07 INFO  AuthorController:40 - Get book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:08 INFO  AuthorController:29 - Created book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:08 INFO  AuthorController:40 - Get book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:08 INFO  AuthorController:29 - Created book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:08 INFO  AuthorController:40 - Get book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:09 INFO  AuthorController:29 - Created book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:09 INFO  AuthorController:40 - Get book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:09 INFO  AuthorController:29 - Created book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:09 INFO  AuthorController:40 - Get book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:14 INFO  AuthorController:40 - Get book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:21 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 18:46:27 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 18:46:30 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 18:46:50 INFO  AuthorController:40 - Get book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:46:50 INFO  AuthorController:68 - Deleted book with : {id:7}
+2022-06-01 18:47:01 ERROR AuthorController:36 - Book with id: {7} not found
+2022-06-01 18:47:13 ERROR AuthorController:36 - Book with id: {7} not found
+2022-06-01 18:47:17 INFO  AuthorController:40 - Get book: {id:3, title:gvfddf, author:12vgdf34}
+2022-06-01 18:47:21 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 18:52:57 INFO  AuthorController:29 - Created book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:52:57 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:52:58 INFO  AuthorController:29 - Created book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:52:58 INFO  AuthorController:40 - Get book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:52:59 INFO  AuthorController:29 - Created book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:52:59 INFO  AuthorController:40 - Get book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:53:00 INFO  AuthorController:29 - Created book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:53:00 INFO  AuthorController:40 - Get book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:53:00 INFO  AuthorController:29 - Created book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:53:00 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:53:06 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 18:55:03 INFO  AuthorController:29 - Created book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:03 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:04 INFO  AuthorController:29 - Created book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:04 INFO  AuthorController:40 - Get book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:04 INFO  AuthorController:29 - Created book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:04 INFO  AuthorController:40 - Get book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:05 INFO  AuthorController:29 - Created book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:05 INFO  AuthorController:40 - Get book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:05 INFO  AuthorController:29 - Created book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:05 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:06 INFO  AuthorController:29 - Created book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:06 INFO  AuthorController:40 - Get book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:29 - Created book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:40 - Get book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:29 - Created book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:40 - Get book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:29 - Created book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:07 INFO  AuthorController:40 - Get book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:08 INFO  AuthorController:29 - Created book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:08 INFO  AuthorController:40 - Get book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:13 INFO  AuthorController:40 - Get book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 18:55:15 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 19:11:50 INFO  AuthorController:29 - Created book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:50 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:51 INFO  AuthorController:29 - Created book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:51 INFO  AuthorController:40 - Get book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:51 INFO  AuthorController:29 - Created book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:51 INFO  AuthorController:40 - Get book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:52 INFO  AuthorController:29 - Created book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:52 INFO  AuthorController:40 - Get book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:53 INFO  AuthorController:29 - Created book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:53 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:53 INFO  AuthorController:29 - Created book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:53 INFO  AuthorController:40 - Get book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:29 - Created book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:40 - Get book: {id:7, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:29 - Created book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:40 - Get book: {id:8, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:29 - Created book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:54 INFO  AuthorController:40 - Get book: {id:9, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:55 INFO  AuthorController:29 - Created book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:55 INFO  AuthorController:40 - Get book: {id:10, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:55 INFO  AuthorController:29 - Created book: {id:11, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:55 INFO  AuthorController:40 - Get book: {id:11, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:56 INFO  AuthorController:29 - Created book: {id:12, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:11:56 INFO  AuthorController:40 - Get book: {id:12, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:12:00 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 19:21:50 INFO  AuthorController:29 - Created book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:50 INFO  AuthorController:40 - Get book: {id:1, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:51 INFO  AuthorController:29 - Created book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:51 INFO  AuthorController:40 - Get book: {id:2, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:52 INFO  AuthorController:29 - Created book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:52 INFO  AuthorController:40 - Get book: {id:3, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:52 INFO  AuthorController:29 - Created book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:52 INFO  AuthorController:40 - Get book: {id:4, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:53 INFO  AuthorController:29 - Created book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:53 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:54 INFO  AuthorController:29 - Created book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:21:54 INFO  AuthorController:40 - Get book: {id:6, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:22:00 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 19:22:05 INFO  AuthorController:40 - Get book: {id:5, title:gvffedsddf, author:12vfsdgdf34}
+2022-06-01 19:22:17 INFO  AuthorController:53 - Updated book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:22:17 INFO  AuthorController:40 - Get book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:22:22 INFO  AuthorController:40 - Get book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:22:22 INFO  AuthorController:68 - Deleted book with : {id:5}
+2022-06-01 19:22:23 ERROR AuthorController:36 - Book with id: {5} not found
+2022-06-01 19:43:51 INFO  AuthorController:29 - Created book: {id:1, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:51 INFO  AuthorController:40 - Get book: {id:1, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:52 INFO  AuthorController:29 - Created book: {id:2, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:52 INFO  AuthorController:40 - Get book: {id:2, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:52 INFO  AuthorController:29 - Created book: {id:3, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:52 INFO  AuthorController:40 - Get book: {id:3, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:53 INFO  AuthorController:29 - Created book: {id:4, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:53 INFO  AuthorController:40 - Get book: {id:4, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:53 INFO  AuthorController:29 - Created book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:43:53 INFO  AuthorController:40 - Get book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:44:04 INFO  AuthorController:29 - Created book: {id:6, title:t43, author:153434}
+2022-06-01 19:44:04 INFO  AuthorController:40 - Get book: {id:6, title:t43, author:153434}
+2022-06-01 19:44:04 INFO  AuthorController:29 - Created book: {id:7, title:t43, author:153434}
+2022-06-01 19:44:04 INFO  AuthorController:40 - Get book: {id:7, title:t43, author:153434}
+2022-06-01 19:44:05 INFO  AuthorController:29 - Created book: {id:8, title:t43, author:153434}
+2022-06-01 19:44:05 INFO  AuthorController:40 - Get book: {id:8, title:t43, author:153434}
+2022-06-01 19:44:05 INFO  AuthorController:29 - Created book: {id:9, title:t43, author:153434}
+2022-06-01 19:44:05 INFO  AuthorController:40 - Get book: {id:9, title:t43, author:153434}
+2022-06-01 19:44:06 INFO  AuthorController:29 - Created book: {id:10, title:t43, author:153434}
+2022-06-01 19:44:06 INFO  AuthorController:40 - Get book: {id:10, title:t43, author:153434}
+2022-06-01 19:44:06 INFO  AuthorController:29 - Created book: {id:11, title:t43, author:153434}
+2022-06-01 19:44:06 INFO  AuthorController:40 - Get book: {id:11, title:t43, author:153434}
+2022-06-01 19:44:07 INFO  AuthorController:29 - Created book: {id:12, title:t43, author:153434}
+2022-06-01 19:44:07 INFO  AuthorController:40 - Get book: {id:12, title:t43, author:153434}
+2022-06-01 19:44:08 INFO  AuthorController:29 - Created book: {id:13, title:t43, author:153434}
+2022-06-01 19:44:08 INFO  AuthorController:40 - Get book: {id:13, title:t43, author:153434}
+2022-06-01 19:44:08 INFO  AuthorController:29 - Created book: {id:14, title:t43, author:153434}
+2022-06-01 19:44:08 INFO  AuthorController:40 - Get book: {id:14, title:t43, author:153434}
+2022-06-01 19:44:09 INFO  AuthorController:29 - Created book: {id:15, title:t43, author:153434}
+2022-06-01 19:44:09 INFO  AuthorController:40 - Get book: {id:15, title:t43, author:153434}
+2022-06-01 19:44:09 INFO  AuthorController:29 - Created book: {id:16, title:t43, author:153434}
+2022-06-01 19:44:09 INFO  AuthorController:40 - Get book: {id:16, title:t43, author:153434}
+2022-06-01 19:44:14 INFO  AuthorController:40 - Get book: {id:11, title:t43, author:153434}
+2022-06-01 19:44:28 INFO  AuthorController:53 - Updated book: {id:11, title:, author:}
+2022-06-01 19:44:28 INFO  AuthorController:40 - Get book: {id:11, title:, author:}
+2022-06-01 19:44:34 INFO  AuthorController:78 - Requested all books: 
+2022-06-01 19:44:52 INFO  AuthorController:40 - Get book: {id:5, title:gergergf, author:14234234324234234234234gdf34}
+2022-06-01 19:44:52 INFO  AuthorController:68 - Deleted book with : {id:5}
+2022-06-01 19:44:53 ERROR AuthorController:36 - Book with id: {5} not found
+2022-06-01 19:45:48 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:45:48 ERROR AuthorController:35 - Author with id: {1} not found
+2022-06-01 19:45:49 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:45:49 ERROR AuthorController:35 - Author with id: {2} not found
+2022-06-01 19:45:55 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:45:55 ERROR AuthorController:35 - Author with id: {3} not found
+2022-06-01 19:45:56 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:45:56 ERROR AuthorController:35 - Author with id: {4} not found
+2022-06-01 19:47:26 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:26 ERROR AuthorController:35 - Author with id: {5} not found
+2022-06-01 19:47:27 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:27 ERROR AuthorController:35 - Author with id: {6} not found
+2022-06-01 19:47:28 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:28 ERROR AuthorController:35 - Author with id: {7} not found
+2022-06-01 19:47:45 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:45 INFO  AuthorController:39 - Get author: {id:1, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:46 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:47:46 INFO  AuthorController:39 - Get author: {id:2, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:00 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:00 INFO  AuthorController:39 - Get author: {id:3, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:01 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:01 INFO  AuthorController:39 - Get author: {id:4, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:01 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:01 INFO  AuthorController:39 - Get author: {id:5, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:39 - Get author: {id:6, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:39 - Get author: {id:7, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:02 INFO  AuthorController:39 - Get author: {id:8, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:03 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:03 INFO  AuthorController:39 - Get author: {id:9, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:03 INFO  AuthorController:28 - Created author: {id:0, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:03 INFO  AuthorController:39 - Get author: {id:10, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:10 INFO  AuthorController:39 - Get author: {id:7, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:14 INFO  AuthorController:77 - Requested all authors
+2022-06-01 19:48:29 INFO  AuthorController:39 - Get author: {id:5, name:k43m, surname:gm;ertm43}
+2022-06-01 19:48:29 INFO  AuthorController:68 - Deleted author with: {id:5}
+2022-06-01 19:48:30 ERROR AuthorController:35 - Author with id: {5} not found
+2022-06-01 19:48:46 INFO  AuthorController:52 - Updated author: {id:7, name:, surname:}
+2022-06-01 19:48:46 INFO  AuthorController:39 - Get author: {id:7, name:, surname:}
+2022-06-01 19:48:52 INFO  AuthorController:77 - Requested all authors

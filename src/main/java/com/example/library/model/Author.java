@@ -1,6 +1,9 @@
 package com.example.library.model;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import javax.persistence.*;
@@ -8,6 +11,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "AUTHORS")
 @EnableAutoConfiguration
+@Builder
+@AllArgsConstructor
+@Getter
 public class Author {
 
     @Id
@@ -21,11 +27,6 @@ public class Author {
     @Column(name = "surname", length = 64, nullable = false)
     private String surname;
 
-    public Author(long id, String name, String surname) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-    }
 
     public Author(){
 
