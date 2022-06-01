@@ -9,8 +9,8 @@ public interface BookService {
 
     void createBook (Book book);
     Book getBook (long id) throws BookNotFoundException;
-    boolean updateBook(Book book, long id);
-    boolean deleteBook(long id);
+    void updateBook(Book book, long id);
+    void deleteBook(long id);
     List<Book> getAllBooks ();
 
 

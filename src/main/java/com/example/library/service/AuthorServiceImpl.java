@@ -1,9 +1,10 @@
 package com.example.library.service;
 
+import com.example.library.controller.AuthorController;
 import com.example.library.exceptions.*;
 import com.example.library.model.Author;
-import com.example.library.model.Book;
 import com.example.library.repository.AuthorRepository;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +16,15 @@ public class AuthorServiceImpl implements AuthorService{
 
     private static final Map <Integer,Author> Authors = new HashMap<>();
     private static final AtomicInteger Author_Id_Holder = new AtomicInteger();
+    private static final Logger log = Logger.getLogger(AuthorController.class);
+
     @Autowired
     AuthorRepository authorRepository;
 
 
     @Override
     public void createAuthor(Author author) {
+        log.info("Created author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
         authorRepository.save(new Author(author.getId(),author.getName(),author.getSurname()));
     }
 
@@ -28,15 +32,17 @@ public class AuthorServiceImpl implements AuthorService{
     public Author getAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
+            log.error("Author with id: {" + id + "} not found");
             throw new AuthorNotFoundException("Author not found");
         } else {
             Author author = authorData.get();
+            log.info("Get author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
             return author;
         }
     }
 
     @Override
-    public boolean updateAuthor(Author author, long id) {
+    public void updateAuthor(Author author, long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isPresent()) {
             Author _author = authorData.get();
@@ -44,21 +50,23 @@ public class AuthorServiceImpl implements AuthorService{
             _author.setName(author.getName());
             _author.setSurname(author.getSurname());
             authorRepository.save(_author);
-            return true;
+            log.info("Updated author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
         }
         else {
+            log.error("Error updating Author with id: {" + id + "}");
             throw new AuthorNotUpdatedException("Author not found");
         }
     }
 
     @Override
-    public boolean deleteAuthor(long id) {
+    public void deleteAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
+            log.error("Error deleting Author with id: {" + id + "}");
             throw new AuthorNotDeletedException("Author not found");
         } else {
             authorRepository.deleteById(id);
-            return true;
+            log.info("Deleted author with: {id:" + id + "}");
         }
     }
 
@@ -67,9 +75,11 @@ public class AuthorServiceImpl implements AuthorService{
         List<Author> authors = new ArrayList<Author>();
         authorRepository.findAll().forEach(authors::add);
         if (!authors.isEmpty()){
+            log.info("Requested all authors");
             return authors;
         }
         else {
+            log.error("There are no Authors found");
             throw new NoAuthorsFoundException("There are no authors");
         }
     }

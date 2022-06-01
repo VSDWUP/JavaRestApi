@@ -8,7 +8,7 @@ public interface AuthorService {
 
     void createAuthor(Author author);
     Author getAuthor(long id);
-    boolean updateAuthor(Author author, long id);
-    boolean deleteAuthor(long id);
+    void updateAuthor(Author author, long id);
+    void deleteAuthor(long id);
     List<Author> getAllAuthors();
 }
