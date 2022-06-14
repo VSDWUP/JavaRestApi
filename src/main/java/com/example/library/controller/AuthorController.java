@@ -2,17 +2,14 @@ package com.example.library.controller;
 
 import com.example.library.converter.AuthorResourceModelConverter;
 import com.example.library.model.Author;
-import com.example.library.model.Book;
 import com.example.library.repository.AuthorRepository;
 import com.example.library.resource.AuthorResource;
-import com.example.library.resource.BookResource;
 import com.example.library.service.AuthorService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -26,7 +23,6 @@ public class AuthorController {
     @Autowired
     AuthorRepository authorRepository;
     private final AuthorService authorService;
-    private static final Logger log = Logger.getLogger(AuthorController.class);
     private final AuthorResourceModelConverter converter;
 
 
@@ -34,8 +30,7 @@ public class AuthorController {
     public AuthorResource create(@RequestBody AuthorResource authorResource){
         Author author = converter.convertFromSourceToModel(authorResource);
         authorService.createAuthor(author);
-        //Author author_return = authorService.getAuthor(Author_Id_Holder.get());
-        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthor(Author_Id_Holder.get()));
+        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthorWoLog(Author_Id_Holder.get()));
         return return_AuthorResource;
     }
 
@@ -51,8 +46,7 @@ public class AuthorController {
     public AuthorResource update(@PathVariable(value = "id") int id, @RequestBody AuthorResource authorResource){
         Author author = converter.convertFromSourceToModel(authorResource);
         authorService.updateAuthor(author,id);
-        //Author author_return = authorService.getAuthor(id);
-        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthor(id));
+        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthorWoLog(id));
         return return_AuthorResource;
 
     }
@@ -60,7 +54,7 @@ public class AuthorController {
 
     @DeleteMapping(value = "/author/{id}")
     public ResponseEntity delete(@PathVariable(value = "id") int id){
-        Author author =  authorService.getAuthor(id);
+        Author author =  authorService.getAuthorWoLog(id);
         authorService.deleteAuthor(id);
         String str = "Deleted Author:\n id: " + author.getId() + ",\n name: " + author.getName() + ",\n surname: " + author.getSurname();
         return new ResponseEntity<>(str,HttpStatus.OK);

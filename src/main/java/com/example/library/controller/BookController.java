@@ -26,16 +26,13 @@ public class BookController {
     @Autowired
     BookRepository bookRepository;
     private final BookService bookService;
-    private static final Logger log = Logger.getLogger(BookController.class);
     private final BookResourceModelConverter converter;
 
     @PostMapping(value = "/book")
     public BookResource create(@RequestBody BookResource bookResource){
         Book book = converter.convertFromSourceToModel(bookResource);
         bookService.createBook(book);
-        BookResource return_bookResource = converter.convertFromModelToSource(bookService.getBook(Book_Id_Holder.get()));
-        //Book book_return = bookService.getBook(Book_Id_Holder.get());
-        //return new ResponseEntity<>(book_return,HttpStatus.CREATED);
+        BookResource return_bookResource = converter.convertFromModelToSource(bookService.getBookWoLog(Book_Id_Holder.get()));
         return return_bookResource;
     }
 
@@ -50,7 +47,7 @@ public class BookController {
     public BookResource update(@PathVariable(name = "id") long id, @RequestBody BookResource bookResource){
         Book book = converter.convertFromSourceToModel(bookResource);
         bookService.updateBook(book,id);
-        Book book_return = bookService.getBook(id);
+        Book book_return = bookService.getBookWoLog(id);
         BookResource return_bookResource = converter.convertFromModelToSource(book_return);
         return return_bookResource;
 
@@ -58,7 +55,7 @@ public class BookController {
 
     @DeleteMapping(value = "book/{id}")
     public ResponseEntity delete (@PathVariable(name = "id") int id){
-        Book book = bookService.getBook(id);
+        Book book = bookService.getBookWoLog(id);
         bookService.deleteBook(id);
         String str = "Deleted Book:\n id: " + book.getId() + ",\n title: " + book.getTitle() + ",\n author: " + book.getAuthor();
         return new ResponseEntity<>(str,HttpStatus.OK);

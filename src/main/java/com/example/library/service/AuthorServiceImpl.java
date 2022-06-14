@@ -4,6 +4,7 @@ import com.example.library.controller.AuthorController;
 import com.example.library.exceptions.*;
 import com.example.library.model.Author;
 import com.example.library.repository.AuthorRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,11 +13,10 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
+@Slf4j
 public class AuthorServiceImpl implements AuthorService{
 
-    private static final Map <Integer,Author> Authors = new HashMap<>();
     public static final AtomicInteger Author_Id_Holder = new AtomicInteger();
-    private static final Logger log = Logger.getLogger(AuthorController.class);
 
     @Autowired
     AuthorRepository authorRepository;
@@ -25,18 +25,29 @@ public class AuthorServiceImpl implements AuthorService{
     @Override
     public void createAuthor(Author author) {
         authorRepository.save(new Author(Author_Id_Holder.incrementAndGet(),author.getName(),author.getSurname()));
-        log.info("Created author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
+        log.info("Created author: id:{}, name:{}, surname:{}",Author_Id_Holder.get(), author.getName(), author.getSurname());
     }
 
     @Override
     public Author getAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
-            log.error("Author with id: {" + id + "} not found");
+            log.error("Author with id: {} not found", id);
             throw new AuthorNotFoundException("Author not found");
         } else {
             Author author = authorData.get();
-            log.info("Get author: {id:" + author.getId() + ", name:" + author.getName() + ", surname:" + author.getSurname() + "}");
+            log.info("Get author: id:{}, name:{}, surname:{}",author.getId(),author.getName(),author.getSurname());
+            return author;
+        }
+    }
+
+    @Override
+    public Author getAuthorWoLog(long id) {
+        Optional<Author> authorData = authorRepository.findById(id);
+        if (authorData.isEmpty() ) {
+            throw new AuthorNotFoundException("Author not found");
+        } else {
+            Author author = authorData.get();
             return author;
         }
     }
@@ -49,10 +60,10 @@ public class AuthorServiceImpl implements AuthorService{
             _author.setName(author.getName());
             _author.setSurname(author.getSurname());
             authorRepository.save(_author);
-            log.info("Updated author: {id:" + _author.getId() + ", name:" + _author.getName() + ", surname:" + _author.getSurname() + "}");
+            log.info("Updated author: id:{}, name:{}, surname:{}", _author.getId(),_author.getName(),_author.getSurname());
         }
         else {
-            log.error("Error updating Author with id: {" + id + "}");
+            log.error("Error updating Author with id:{}",id);
             throw new AuthorNotUpdatedException("Author not found");
         }
     }
@@ -61,11 +72,11 @@ public class AuthorServiceImpl implements AuthorService{
     public void deleteAuthor(long id) {
         Optional<Author> authorData = authorRepository.findById(id);
         if (authorData.isEmpty() ) {
-            log.error("Error deleting Author with id: {" + id + "}");
+            log.error("Error deleting Author with id:{}",id);
             throw new AuthorNotDeletedException("Author not found");
         } else {
             authorRepository.deleteById(id);
-            log.info("Deleted author with: {id:" + id + "}");
+            log.info("Deleted author with: id:{}",id);
         }
     }
 
