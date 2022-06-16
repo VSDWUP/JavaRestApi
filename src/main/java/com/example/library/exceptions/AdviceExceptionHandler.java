@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @ControllerAdvice
-public class adviceExceptionHandler extends ResponseEntityExceptionHandler {
+public class AdviceExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler (CommonException.class)
     public ResponseEntity <?> handle(CommonException commonException) {

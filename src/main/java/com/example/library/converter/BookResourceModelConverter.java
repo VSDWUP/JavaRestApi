@@ -2,8 +2,6 @@ package com.example.library.converter;
 
 import com.example.library.model.Book;
 import com.example.library.resource.BookResource;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import org.springframework.stereotype.Component;
 
 @Component

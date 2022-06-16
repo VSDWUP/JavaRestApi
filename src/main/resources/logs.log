@@ -1413,3 +1413,266 @@
 2022-06-16 23:12:43 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-06-16 23:12:43 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
 2022-06-16 23:12:43 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-16 23:27:56 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 1204 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-16 23:27:56 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-16 23:27:56 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-16 23:27:56 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2022-06-16 23:27:56 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-16 23:27:56 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 662 ms
+2022-06-16 23:27:56 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-16 23:27:56 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-16 23:27:56 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-16 23:27:57 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-16 23:27:57 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-16 23:27:57 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-16 23:27:57 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-16 23:27:57 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-16 23:27:57 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-16 23:27:57 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-16 23:27:57 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-16 23:27:57 INFO  LibraryApplication:61 - Started LibraryApplication in 1.726 seconds (JVM running for 2.121)
+2022-06-16 23:28:03 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-16 23:28:03 INFO  DispatcherServlet:547 - Completed initialization in 0 ms
+2022-06-16 23:28:04 INFO  BookServiceImpl:40 - Created book: id:1, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:04 INFO  BookServiceImpl:40 - Created book: id:2, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:05 INFO  BookServiceImpl:40 - Created book: id:3, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:05 INFO  BookServiceImpl:40 - Created book: id:4, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:06 INFO  BookServiceImpl:40 - Created book: id:5, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:06 INFO  BookServiceImpl:40 - Created book: id:6, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:07 INFO  BookServiceImpl:40 - Created book: id:7, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:07 INFO  BookServiceImpl:40 - Created book: id:8, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:15 INFO  BookServiceImpl:51 - Get book: id:7, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:28:21 INFO  BookServiceImpl:92 - Deleted book with id:5
+2022-06-16 23:30:01 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-16 23:30:01 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-16 23:30:01 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-16 23:30:07 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 26420 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-16 23:30:07 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-16 23:30:08 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-16 23:30:08 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-06-16 23:30:08 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-16 23:30:08 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 654 ms
+2022-06-16 23:30:08 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-16 23:30:08 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-16 23:30:08 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-16 23:30:08 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-16 23:30:08 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-16 23:30:08 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-16 23:30:08 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-16 23:30:09 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-16 23:30:09 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-16 23:30:09 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-16 23:30:09 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-16 23:30:09 INFO  LibraryApplication:61 - Started LibraryApplication in 1.747 seconds (JVM running for 2.14)
+2022-06-16 23:30:13 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-16 23:30:13 INFO  DispatcherServlet:547 - Completed initialization in 0 ms
+2022-06-16 23:30:14 INFO  BookServiceImpl:40 - Created book: id:1, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:14 INFO  BookServiceImpl:40 - Created book: id:2, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:15 INFO  BookServiceImpl:40 - Created book: id:3, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:15 INFO  BookServiceImpl:40 - Created book: id:4, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:15 INFO  BookServiceImpl:40 - Created book: id:5, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:17 INFO  BookServiceImpl:40 - Created book: id:6, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:17 INFO  BookServiceImpl:40 - Created book: id:7, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:18 INFO  BookServiceImpl:40 - Created book: id:8, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:18 INFO  BookServiceImpl:40 - Created book: id:9, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:21 INFO  BookServiceImpl:40 - Created book: id:10, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:21 INFO  BookServiceImpl:40 - Created book: id:11, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:22 INFO  BookServiceImpl:40 - Created book: id:12, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:23 INFO  BookServiceImpl:40 - Created book: id:13, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:23 INFO  BookServiceImpl:40 - Created book: id:14, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:24 INFO  BookServiceImpl:40 - Created book: id:15, title:323we4323257, author:443432)))))34343e
+2022-06-16 23:30:33 INFO  BookServiceImpl:92 - Deleted book with id:9
+2022-06-17 00:09:42 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:09:42 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-17 00:09:42 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-17 00:09:48 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 6280 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-17 00:09:48 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-17 00:09:48 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-17 00:09:48 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2022-06-17 00:09:48 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-17 00:09:48 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 617 ms
+2022-06-17 00:09:49 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-17 00:09:49 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-17 00:09:49 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-17 00:09:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-17 00:09:49 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-17 00:09:49 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-17 00:09:49 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-17 00:09:49 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-17 00:09:49 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:09:49 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-17 00:09:49 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-17 00:09:49 INFO  LibraryApplication:61 - Started LibraryApplication in 1.754 seconds (JVM running for 2.125)
+2022-06-17 00:09:59 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-17 00:09:59 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-06-17 00:09:59 INFO  DefaultBookService:36 - Created book: id: 1, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:00 INFO  DefaultBookService:36 - Created book: id: 2, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:00 INFO  DefaultBookService:36 - Created book: id: 3, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:01 INFO  DefaultBookService:36 - Created book: id: 4, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:02 INFO  DefaultBookService:36 - Created book: id: 5, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:02 INFO  DefaultBookService:36 - Created book: id: 6, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:02 INFO  DefaultBookService:36 - Created book: id: 7, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:03 INFO  DefaultBookService:36 - Created book: id: 8, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:04 INFO  DefaultBookService:36 - Created book: id: 9, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:04 INFO  DefaultBookService:36 - Created book: id: 10, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:05 INFO  DefaultBookService:36 - Created book: id: 11, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:06 INFO  DefaultBookService:36 - Created book: id: 12, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:06 INFO  DefaultBookService:36 - Created book: id: 13, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:06 INFO  DefaultBookService:36 - Created book: id: 14, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:07 INFO  DefaultBookService:36 - Created book: id: 15, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:12 INFO  DefaultBookService:95 - Requested all books
+2022-06-17 00:10:17 INFO  DefaultBookService:47 - Get book: id: 15, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:10:25 INFO  DefaultBookService:86 - Deleted book with id: 7
+2022-06-17 00:10:31 INFO  DefaultBookService:95 - Requested all books
+2022-06-17 00:10:40 INFO  DefaultBookService:36 - Created book: id: 16, title: 323we4323257, author: 443432)))))34343e
+2022-06-17 00:11:04 INFO  DefaultBookService:71 - Updated book: id: 11, title: 1 1, author:   
+2022-06-17 00:11:08 INFO  DefaultBookService:95 - Requested all books
+2022-06-17 00:11:17 INFO  DefaultBookService:36 - Created book: id: 17, title: 1 1, author:   
+2022-06-17 00:11:33 INFO  DefaultBookService:86 - Deleted book with id: 12
+2022-06-17 00:11:40 INFO  DefaultBookService:36 - Created book: id: 18, title: 1 1, author:   
+2022-06-17 00:11:40 INFO  DefaultBookService:36 - Created book: id: 19, title: 1 1, author:   
+2022-06-17 00:11:41 INFO  DefaultBookService:36 - Created book: id: 20, title: 1 1, author:   
+2022-06-17 00:11:46 INFO  DefaultBookService:95 - Requested all books
+2022-06-17 00:12:48 INFO  DefaultAuthorService:33 - Created author: id: 1, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:12:50 INFO  DefaultAuthorService:33 - Created author: id: 2, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:12:50 INFO  DefaultAuthorService:33 - Created author: id: 3, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:12:51 INFO  DefaultAuthorService:33 - Created author: id: 4, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:12:52 INFO  DefaultAuthorService:33 - Created author: id: 5, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:12:52 INFO  DefaultAuthorService:33 - Created author: id: 6, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:06 INFO  DefaultAuthorService:33 - Created author: id: 7, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:06 INFO  DefaultAuthorService:33 - Created author: id: 8, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:07 INFO  DefaultAuthorService:33 - Created author: id: 9, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:08 INFO  DefaultAuthorService:33 - Created author: id: 10, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:20 ERROR DefaultAuthorService:40 - Author with id: 9 not found
+2022-06-17 00:13:21 ERROR DefaultAuthorService:40 - Author with id: 9 not found
+2022-06-17 00:13:32 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:13:32 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-17 00:13:32 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-17 00:13:41 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 26024 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-17 00:13:41 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-17 00:13:42 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-17 00:13:42 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-06-17 00:13:42 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-17 00:13:42 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 668 ms
+2022-06-17 00:13:42 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-17 00:13:42 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-17 00:13:42 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-17 00:13:42 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-17 00:13:42 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-17 00:13:42 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-17 00:13:42 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-17 00:13:42 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-17 00:13:43 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:13:43 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-17 00:13:43 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-17 00:13:43 INFO  LibraryApplication:61 - Started LibraryApplication in 1.771 seconds (JVM running for 2.132)
+2022-06-17 00:13:48 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-17 00:13:48 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-06-17 00:13:48 INFO  DefaultAuthorService:33 - Created author: id: 1, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:49 INFO  DefaultAuthorService:33 - Created author: id: 2, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:13:49 INFO  DefaultAuthorService:33 - Created author: id: 3, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:14:13 INFO  DefaultBookService:36 - Created book: id: 1, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:13 INFO  DefaultBookService:36 - Created book: id: 2, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:14 INFO  DefaultBookService:36 - Created book: id: 3, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:15 INFO  DefaultBookService:36 - Created book: id: 4, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:15 INFO  DefaultBookService:36 - Created book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:16 INFO  DefaultBookService:36 - Created book: id: 6, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:17 INFO  DefaultBookService:36 - Created book: id: 7, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:14:27 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:28 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:29 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:30 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:30 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:31 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:31 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:32 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:32 ERROR DefaultBookService:43 - Book with id: 1 not found
+2022-06-17 00:14:35 INFO  DefaultBookService:47 - Get book: id: 7, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:15:17 ERROR DefaultAuthorService:40 - Author with id: 5 not found
+2022-06-17 00:15:18 ERROR DefaultAuthorService:40 - Author with id: 5 not found
+2022-06-17 00:15:18 ERROR DefaultAuthorService:40 - Author with id: 5 not found
+2022-06-17 00:15:22 INFO  DefaultAuthorService:44 - Get author: id: 3, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:15:25 INFO  DefaultAuthorService:44 - Get author: id: 2, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:15:29 INFO  DefaultAuthorService:92 - Requested all authors
+2022-06-17 00:15:39 INFO  DefaultAuthorService:84 - Deleted author with: id: 2
+2022-06-17 00:16:04 INFO  DefaultAuthorService:33 - Created author: id: 8, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:05 INFO  DefaultAuthorService:33 - Created author: id: 9, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:06 INFO  DefaultAuthorService:33 - Created author: id: 10, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:07 INFO  DefaultAuthorService:33 - Created author: id: 11, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:07 INFO  DefaultAuthorService:33 - Created author: id: 12, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:08 INFO  DefaultAuthorService:33 - Created author: id: 13, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:09 INFO  DefaultAuthorService:33 - Created author: id: 14, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:10 INFO  DefaultAuthorService:33 - Created author: id: 15, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:10 INFO  DefaultAuthorService:33 - Created author: id: 16, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:17 ERROR DefaultAuthorService:40 - Author with id: 9 not found
+2022-06-17 00:16:21 INFO  DefaultAuthorService:44 - Get author: id: 15, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:28 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:16:28 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-17 00:16:28 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-17 00:16:35 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 27912 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-17 00:16:35 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-17 00:16:36 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-17 00:16:36 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2022-06-17 00:16:36 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-17 00:16:36 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 635 ms
+2022-06-17 00:16:36 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-17 00:16:36 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-17 00:16:36 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-17 00:16:36 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-17 00:16:36 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-17 00:16:36 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-17 00:16:36 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-17 00:16:37 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-17 00:16:37 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:16:37 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-17 00:16:37 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-17 00:16:37 INFO  LibraryApplication:61 - Started LibraryApplication in 1.716 seconds (JVM running for 2.101)
+2022-06-17 00:16:52 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-17 00:16:52 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-06-17 00:16:52 INFO  DefaultAuthorService:33 - Created author: id: 1, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:55 INFO  DefaultAuthorService:33 - Created author: id: 2, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:57 INFO  DefaultAuthorService:33 - Created author: id: 3, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:16:58 INFO  DefaultAuthorService:33 - Created author: id: 4, name: fsdfdsfsd, surname: gdfgdeeftergdv
+2022-06-17 00:17:16 INFO  DefaultBookService:36 - Created book: id: 1, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:18 INFO  DefaultBookService:36 - Created book: id: 2, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:20 INFO  DefaultBookService:36 - Created book: id: 3, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:21 INFO  DefaultBookService:36 - Created book: id: 4, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:22 INFO  DefaultBookService:36 - Created book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:22 INFO  DefaultBookService:36 - Created book: id: 6, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:23 INFO  DefaultBookService:36 - Created book: id: 7, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:24 INFO  DefaultBookService:36 - Created book: id: 8, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:24 INFO  DefaultBookService:36 - Created book: id: 9, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:24 INFO  DefaultBookService:36 - Created book: id: 10, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:25 INFO  DefaultBookService:36 - Created book: id: 11, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:25 INFO  DefaultBookService:36 - Created book: id: 12, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:25 INFO  DefaultBookService:36 - Created book: id: 13, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:26 INFO  DefaultBookService:36 - Created book: id: 14, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:26 INFO  DefaultBookService:36 - Created book: id: 15, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:26 INFO  DefaultBookService:36 - Created book: id: 16, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:27 INFO  DefaultBookService:36 - Created book: id: 17, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:27 INFO  DefaultBookService:36 - Created book: id: 18, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:28 INFO  DefaultBookService:36 - Created book: id: 19, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:28 INFO  DefaultBookService:36 - Created book: id: 20, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:29 INFO  DefaultBookService:36 - Created book: id: 21, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:30 INFO  DefaultBookService:36 - Created book: id: 22, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:31 INFO  DefaultBookService:36 - Created book: id: 23, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:32 INFO  DefaultBookService:36 - Created book: id: 24, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:17:51 ERROR DefaultBookService:43 - Book with id: 3 not found
+2022-06-17 00:18:12 ERROR DefaultBookService:43 - Book with id: 3 not found
+2022-06-17 00:18:16 ERROR DefaultBookService:43 - Book with id: 3 not found
+2022-06-17 00:18:39 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:43 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:44 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:44 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:45 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:46 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:46 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:47 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:47 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:48 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:48 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:49 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:49 INFO  DefaultBookService:47 - Get book: id: 5, title: fsdfdsfsd, author: gdfgdeeftergdv
+2022-06-17 00:18:59 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 00:18:59 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-17 00:18:59 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

@@ -14,12 +14,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.example.library.service.AuthorServiceImpl.Author_Id_Holder;
+import static com.example.library.service.DefaultAuthorService.Author_Id_Holder;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @AllArgsConstructor
 public class AuthorController {
+
     @Autowired
     AuthorRepository authorRepository;
     private final AuthorService authorService;
@@ -30,40 +31,36 @@ public class AuthorController {
     public AuthorResource create(@RequestBody AuthorResource authorResource){
         Author author = converter.convertFromSourceToModel(authorResource);
         authorService.createAuthor(author);
-        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthorWoLog(Author_Id_Holder.get()));
-        return return_AuthorResource;
+        return converter.convertFromModelToSource(authorService.getAuthorWoLog(Author_Id_Holder.get()));
     }
 
     @GetMapping(value = "/author/{id}")
     public AuthorResource get(@PathVariable(value = "id") long id){
         final Author author = authorService.getAuthor(id);
-        AuthorResource return_AuthorResource = converter.convertFromModelToSource(author);
-        return return_AuthorResource;
-
+        return converter.convertFromModelToSource(author);
     }
 
     @PutMapping(value = "/author/{id}")
     public AuthorResource update(@PathVariable(value = "id") int id, @RequestBody AuthorResource authorResource){
         Author author = converter.convertFromSourceToModel(authorResource);
         authorService.updateAuthor(author,id);
-        AuthorResource return_AuthorResource = converter.convertFromModelToSource(authorService.getAuthorWoLog(id));
-        return return_AuthorResource;
-
+        return converter.convertFromModelToSource(authorService.getAuthorWoLog(id));
     }
 
 
     @DeleteMapping(value = "/author/{id}")
-    public ResponseEntity delete(@PathVariable(value = "id") int id){
+    public ResponseEntity <?> delete(@PathVariable(value = "id") int id){
         Author author =  authorService.getAuthorWoLog(id);
         authorService.deleteAuthor(id);
-        String str = "Deleted Author:\n id: " + author.getId() + ",\n name: " + author.getName() + ",\n surname: " + author.getSurname();
-        return new ResponseEntity<>(str,HttpStatus.OK);
-
+        String responseMessage = String.format("Deleted Author: id: %s, name: %s, surname: %s", author.getId(), author.getName(), author.getSurname());
+        return new ResponseEntity<>(responseMessage,HttpStatus.OK);
     }
 
     @GetMapping(value = "/authors")
     public List<AuthorResource> getAuthors(){
-        return authorService.getAllAuthors().stream().map(converter::convertFromModelToSource).collect(Collectors.toList());
+        return authorService.getAllAuthors().stream()
+                .map(converter::convertFromModelToSource)
+                .collect(Collectors.toList());
     }
 
 

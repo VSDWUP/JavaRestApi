@@ -1,7 +1,6 @@
 package com.example.library.controller;
 
 import com.example.library.converter.BookResourceModelConverter;
-import com.example.library.exceptions.BookNotFoundException;
 import com.example.library.model.Book;
 import com.example.library.repository.BookRepository;
 import com.example.library.resource.BookResource;
@@ -11,12 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.example.library.service.BookServiceImpl.Book_Id_Holder;
+import static com.example.library.service.DefaultBookService.Book_Id_Holder;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -32,33 +30,29 @@ public class BookController {
     public BookResource create(@RequestBody BookResource bookResource){
         Book book = converter.convertFromSourceToModel(bookResource);
         bookService.createBook(book);
-        BookResource return_bookResource = converter.convertFromModelToSource(bookService.getBookWoLog(Book_Id_Holder.get()));
-        return return_bookResource;
+        return converter.convertFromModelToSource(bookService.getBookWoLog(Book_Id_Holder.get()));
     }
 
     @GetMapping(value = "book/{id}")
     public BookResource read(@PathVariable(name = "id") long id) {
         final Book book = bookService.getBook(id);
-        BookResource return_bookResource = converter.convertFromModelToSource(book);
-        return return_bookResource;
+        return converter.convertFromModelToSource(book);
     }
 
     @PutMapping(value = "book/{id}")
     public BookResource update(@PathVariable(name = "id") long id, @RequestBody BookResource bookResource){
         Book book = converter.convertFromSourceToModel(bookResource);
         bookService.updateBook(book,id);
-        Book book_return = bookService.getBookWoLog(id);
-        BookResource return_bookResource = converter.convertFromModelToSource(book_return);
-        return return_bookResource;
+        return converter.convertFromModelToSource(bookService.getBookWoLog(id));
 
     }
 
     @DeleteMapping(value = "book/{id}")
-    public ResponseEntity delete (@PathVariable(name = "id") int id){
+    public ResponseEntity <?> delete (@PathVariable(name = "id") int id){
         Book book = bookService.getBookWoLog(id);
         bookService.deleteBook(id);
-        String str = "Deleted Book:\n id: " + book.getId() + ",\n title: " + book.getTitle() + ",\n author: " + book.getAuthor();
-        return new ResponseEntity<>(str,HttpStatus.OK);
+        String responseMessage = String.format("Deleted Book: id: %s, title: %s, author: %s",book.getId(), book.getTitle(), book.getAuthor());
+        return new ResponseEntity<>(responseMessage,HttpStatus.OK);
     }
 
     @GetMapping(value = "/books")

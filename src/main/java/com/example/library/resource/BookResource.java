@@ -9,6 +9,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class BookResource {
+
     @JsonProperty(value = "id")
     private long id;
 

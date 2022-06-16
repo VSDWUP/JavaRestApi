@@ -1,6 +1,5 @@
 package com.example.library.service;
 
-import com.example.library.exceptions.BookNotFoundException;
 import com.example.library.model.Book;
 
 import java.util.List;
