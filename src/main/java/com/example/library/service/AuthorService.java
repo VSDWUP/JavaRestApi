@@ -9,6 +9,7 @@ public interface AuthorService {
     void createAuthor(Author author);
     Author getAuthor(long id);
     Author getAuthorWoLog(long id);
+    boolean checkAuthorPresence (long id);
     void updateAuthor(Author author, long id);
     void deleteAuthor(long id);
     List<Author> getAllAuthors();

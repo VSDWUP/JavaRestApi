@@ -16,6 +16,6 @@ public class BookResource {
     @JsonProperty (value = "title")
     private String title;
 
-    @JsonProperty (value = "author")
-    private String author;
+    @JsonProperty (value = "author_id")
+    private long author_id;
 }

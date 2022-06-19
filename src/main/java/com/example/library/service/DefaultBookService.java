@@ -2,10 +2,7 @@ package com.example.library.service;
 
 import com.example.library.converter.BookModelEntityConverter;
 import com.example.library.entity.BookEntity;
-import com.example.library.exceptions.BookNotDeletedException;
-import com.example.library.exceptions.BookNotFoundException;
-import com.example.library.exceptions.BookNotUpdatedException;
-import com.example.library.exceptions.NoBooksFoundException;
+import com.example.library.exceptions.*;
 import com.example.library.model.Book;
 import com.example.library.repository.BookRepository;
 import lombok.AllArgsConstructor;
@@ -28,15 +25,21 @@ public class DefaultBookService implements BookService {
 
     @Autowired
     private final BookRepository bookRepository;
+    private final AuthorService authorService;
 
     private final BookModelEntityConverter bookModelEntityConverter;
 
     @Override
     public void createBook(Book book) {
-        BookEntity bookEntity = bookModelEntityConverter.convertFromModelToSource(book);
-        bookEntity.setId(Book_Id_Holder.incrementAndGet());
-        bookRepository.save(bookEntity);
-        log.info("Created book: id: {}, title: {}, author: {}", bookEntity.getId(), bookEntity.getTitle(), bookEntity.getAuthor());
+        if (authorService.checkAuthorPresence(book.getAuthor_id())){
+            BookEntity bookEntity = bookModelEntityConverter.convertFromModelToSource(book);
+            bookEntity.setId(Book_Id_Holder.incrementAndGet());
+            bookRepository.save(bookEntity);
+            log.info("Created book: id: {}, title: {}, author: {}", bookEntity.getId(), bookEntity.getTitle(), bookEntity.getAuthor_id());
+        }
+        else {
+            throw new AuthorNotFoundException("Author not found");
+        }
     }
 
     @Override
@@ -47,7 +50,7 @@ public class DefaultBookService implements BookService {
             throw new BookNotFoundException("Book not found");
         } else {
             Book book = bookModelEntityConverter.convertFromSourceToModel(bookEntityData.get());
-            log.info("Get book: id: {}, title: {}, author: {}", book.getId(),book.getTitle(),book.getAuthor());
+            log.info("Get book: id: {}, title: {}, author: {}", book.getId(),book.getTitle(),book.getAuthor_id());
             return book;
         }
     }
@@ -68,10 +71,10 @@ public class DefaultBookService implements BookService {
         if (bookEntityData.isPresent()) {
             Book _book = bookModelEntityConverter.convertFromSourceToModel(bookEntityData.get());
             _book.setTitle(book.getTitle());
-            _book.setAuthor(book.getAuthor());
+            _book.setAuthor_id(book.getAuthor_id());
             BookEntity bookEntity = bookModelEntityConverter.convertFromModelToSource(_book);
             bookRepository.save(bookEntity);
-            log.info("Updated book: id: {}, title: {}, author: {}", bookEntity.getId(), bookEntity.getTitle(), bookEntity.getAuthor());
+            log.info("Updated book: id: {}, title: {}, author: {}", bookEntity.getId(), bookEntity.getTitle(), bookEntity.getAuthor_id());
         }
         else {
             log.error("Error updating Book with id: {}",id);

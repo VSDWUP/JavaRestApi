@@ -3171,3 +3171,38 @@ A file path that is implicitly relative to the current working directory is not 
 2022-06-19 17:49:18 INFO  DefaultBookService:39 - Created book: id: 4, title: 14324323, author: 44234256
 2022-06-19 17:49:30 INFO  DefaultAuthorService:36 - Created author: id: 1, name: 14324323, surname: 44234256
 2022-06-19 17:49:38 INFO  DefaultAuthorService:36 - Created author: id: 2, name: 14324323, surname: 44234256
+2022-06-19 17:51:09 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 17:51:09 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-19 17:51:09 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-19 18:05:08 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 14000 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-19 18:05:08 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-19 18:05:09 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 18:05:09 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2022-06-19 18:05:09 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-19 18:05:09 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 880 ms
+2022-06-19 18:05:09 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-19 18:05:10 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-19 18:05:10 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-19 18:05:10 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 18:05:10 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-19 18:05:10 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-19 18:05:10 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-19 18:05:10 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 18:05:10 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 18:05:10 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 18:05:11 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 18:05:11 INFO  LibraryApplication:61 - Started LibraryApplication in 2.34 seconds (JVM running for 2.814)
+2022-06-19 18:05:34 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-19 18:05:34 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-06-19 18:06:31 INFO  DefaultAuthorService:36 - Created author: id: 1, name: 14324323, surname: 44234256
+2022-06-19 18:06:33 INFO  DefaultAuthorService:36 - Created author: id: 2, name: 14324323, surname: 44234256
+2022-06-19 18:06:34 INFO  DefaultAuthorService:36 - Created author: id: 3, name: 14324323, surname: 44234256
+2022-06-19 18:06:35 INFO  DefaultAuthorService:36 - Created author: id: 4, name: 14324323, surname: 44234256
+2022-06-19 18:06:36 INFO  DefaultAuthorService:36 - Created author: id: 5, name: 14324323, surname: 44234256
+2022-06-19 18:12:40 INFO  DefaultBookService:38 - Created book: id: 1, title: 14324323, author: 5
+2022-06-19 18:12:57 INFO  DefaultBookService:38 - Created book: id: 2, title: 14324323, author: 1
+2022-06-19 18:13:02 INFO  DefaultBookService:38 - Created book: id: 3, title: 14324323, author: 2
+2022-06-19 18:13:05 INFO  DefaultBookService:38 - Created book: id: 4, title: 14324323, author: 3
+2022-06-19 18:13:10 INFO  DefaultBookService:38 - Created book: id: 5, title: 14324323, author: 4
+2022-06-19 18:13:14 INFO  DefaultBookService:38 - Created book: id: 6, title: 14324323, author: 5
+2022-06-19 18:13:28 INFO  DefaultBookService:38 - Created book: id: 7, title: 14324323, author: 5

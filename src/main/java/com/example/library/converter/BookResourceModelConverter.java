@@ -11,7 +11,7 @@ public class BookResourceModelConverter implements Converter <BookResource,Book>
         return Book.builder()
                 .id(resource.getId())
                 .title(resource.getTitle())
-                .author(resource.getAuthor())
+                .author_id(resource.getAuthor_id())
                 .build();
     }
 
@@ -20,7 +20,7 @@ public class BookResourceModelConverter implements Converter <BookResource,Book>
         return BookResource.builder()
                 .id(model.getId())
                 .title(model.getTitle())
-                .author(model.getAuthor())
+                .author_id(model.getAuthor_id())
                 .build();
     }
 

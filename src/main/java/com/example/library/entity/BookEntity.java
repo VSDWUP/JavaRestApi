@@ -22,7 +22,7 @@ public class BookEntity {
     @Column(name = "title", length = 64, nullable = false)
     private String title;
 
-    @Column(name = "author", length = 64, nullable = false)
-    private String author;
+    @Column(name = "author_id", length = 64, nullable = false)
+    private long author_id;
 
 }

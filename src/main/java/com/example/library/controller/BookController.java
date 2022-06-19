@@ -51,7 +51,7 @@ public class BookController {
     public ResponseEntity <?> delete (@PathVariable(name = "id") int id){
         Book book = bookService.getBookWoLog(id);
         bookService.deleteBook(id);
-        String responseMessage = String.format("Deleted Book: id: %s, title: %s, author: %s",book.getId(), book.getTitle(), book.getAuthor());
+        String responseMessage = String.format("Deleted Book: id: %s, title: %s, author: %s",book.getId(), book.getTitle(), book.getAuthor_id());
         return new ResponseEntity<>(responseMessage,HttpStatus.OK);
     }
 

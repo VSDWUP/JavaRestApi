@@ -60,6 +60,16 @@ public class DefaultAuthorService implements AuthorService{
     }
 
     @Override
+    public boolean checkAuthorPresence(long id) {
+        Optional<AuthorEntity> authorEntityData = authorRepository.findById(id);
+        if (authorEntityData.isEmpty() ) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    @Override
     public void updateAuthor(Author author, long id) {
         Optional<AuthorEntity> authorEntityData = authorRepository.findById(id);
         if (authorEntityData.isPresent()) {
