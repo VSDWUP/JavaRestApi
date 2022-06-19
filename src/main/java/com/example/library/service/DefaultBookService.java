@@ -12,12 +12,14 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 @Slf4j
 @AllArgsConstructor
 public class DefaultBookService implements BookService {
@@ -25,7 +27,8 @@ public class DefaultBookService implements BookService {
     public static final AtomicInteger Book_Id_Holder = new AtomicInteger();
 
     @Autowired
-    BookRepository bookRepository;
+    private final BookRepository bookRepository;
+
     private final BookModelEntityConverter bookModelEntityConverter;
 
     @Override

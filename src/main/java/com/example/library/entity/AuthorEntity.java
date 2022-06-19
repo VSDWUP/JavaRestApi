@@ -16,7 +16,6 @@ import javax.persistence.*;
 @Setter
 public class AuthorEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id",nullable = false)
     private long id;
 

@@ -9,12 +9,14 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 @Slf4j
 @AllArgsConstructor
 public class DefaultAuthorService implements AuthorService{
@@ -22,7 +24,8 @@ public class DefaultAuthorService implements AuthorService{
     public static final AtomicInteger Author_Id_Holder = new AtomicInteger();
 
     @Autowired
-    AuthorRepository authorRepository;
+
+    private final AuthorRepository authorRepository;
     private final AuthorModelEntityConverter authorModelEntityConverter;
 
     @Override

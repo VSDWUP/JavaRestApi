@@ -22,8 +22,8 @@ import static com.example.library.service.DefaultBookService.Book_Id_Holder;
 public class BookController {
 
     @Autowired
-    BookRepository bookRepository;
     private final BookService bookService;
+
     private final BookResourceModelConverter converter;
 
     @PostMapping(value = "/book")

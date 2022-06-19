@@ -22,8 +22,8 @@ import static com.example.library.service.DefaultAuthorService.Author_Id_Holder;
 public class AuthorController {
 
     @Autowired
-    AuthorRepository authorRepository;
     private final AuthorService authorService;
+
     private final AuthorResourceModelConverter converter;
 
 
