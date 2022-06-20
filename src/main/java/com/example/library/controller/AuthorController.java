@@ -23,7 +23,6 @@ public class AuthorController {
 
     @Autowired
     private final AuthorService authorService;
-
     private final AuthorResourceModelConverter converter;
 
 
@@ -41,7 +40,7 @@ public class AuthorController {
     }
 
     @PutMapping(value = "/author/{id}")
-    public AuthorResource update(@PathVariable(value = "id") int id, @RequestBody AuthorResource authorResource){
+    public AuthorResource update(@PathVariable(value = "id") long id, @RequestBody AuthorResource authorResource){
         Author author = converter.convertFromSourceToModel(authorResource);
         authorService.updateAuthor(author,id);
         return converter.convertFromModelToSource(authorService.getAuthorWoLog(id));
@@ -49,10 +48,9 @@ public class AuthorController {
 
 
     @DeleteMapping(value = "/author/{id}")
-    public ResponseEntity <?> delete(@PathVariable(value = "id") int id){
-        Author author =  authorService.getAuthorWoLog(id);
+    public ResponseEntity <?> delete(@PathVariable(value = "id") long id){
         authorService.deleteAuthor(id);
-        String responseMessage = String.format("Deleted Author: id: %s, name: %s, surname: %s", author.getId(), author.getName(), author.getSurname());
+        String responseMessage = String.format("Successfully deleted author with id:%s", id);
         return new ResponseEntity<>(responseMessage,HttpStatus.OK);
     }
 

@@ -2,7 +2,6 @@ package com.example.library.controller;
 
 import com.example.library.converter.BookResourceModelConverter;
 import com.example.library.model.Book;
-import com.example.library.repository.BookRepository;
 import com.example.library.resource.BookResource;
 import com.example.library.service.BookService;
 import lombok.AllArgsConstructor;
@@ -34,7 +33,7 @@ public class BookController {
     }
 
     @GetMapping(value = "book/{id}")
-    public BookResource read(@PathVariable(name = "id") long id) {
+    public BookResource get(@PathVariable(name = "id") long id) {
         final Book book = bookService.getBook(id);
         return converter.convertFromModelToSource(book);
     }
@@ -48,15 +47,14 @@ public class BookController {
     }
 
     @DeleteMapping(value = "book/{id}")
-    public ResponseEntity <?> delete (@PathVariable(name = "id") int id){
-        Book book = bookService.getBookWoLog(id);
+    public ResponseEntity <?> delete (@PathVariable(name = "id") long id){
         bookService.deleteBook(id);
-        String responseMessage = String.format("Deleted Book: id: %s, title: %s, author: %s",book.getId(), book.getTitle(), book.getAuthor_id());
+        String responseMessage = String.format("Successfully deleted author with id:%s", id);
         return new ResponseEntity<>(responseMessage,HttpStatus.OK);
     }
 
     @GetMapping(value = "/books")
-    public List <BookResource> readAll(){
+    public List <BookResource> getBooks(){
         return bookService.getAllBooks().stream()
                 .map(converter::convertFromModelToSource)
                 .collect(Collectors.toList());
