@@ -4960,3 +4960,34 @@ select authorenti0_.id as id1_0_0_, authorenti0_.name as name2_0_0_, authorenti0
 2022-06-21 01:10:54 ERROR DefaultBookService:89 - Error deleting Book with id: 2
 2022-06-21 01:11:13 INFO  DefaultBookService:77 - Updated book: id: 5, title: War and Peace, author: 2
 2022-06-21 01:11:21 INFO  DefaultBookService:101 - Requested all books
+2022-06-21 09:17:45 WARN  HikariPool:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h5m32s640ms680µs300ns).
+2022-06-21 09:17:52 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 09:17:52 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-21 09:17:52 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2022-06-21 09:20:28 INFO  LibraryApplication:55 - Starting LibraryApplication using Java 16.0.2 on LAPTOP-BJFSL944 with PID 22176 (C:\Users\vsevo\IdeaProjects\Library\target\classes started by vsevo in C:\Users\vsevo\IdeaProjects\Library)
+2022-06-21 09:20:28 INFO  LibraryApplication:640 - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 09:20:28 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 09:20:28 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2022-06-21 09:20:29 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 09:20:29 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 927 ms
+2022-06-21 09:20:29 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-06-21 09:20:29 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-06-21 09:20:29 INFO  H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2022-06-21 09:20:29 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-21 09:20:29 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-21 09:20:29 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-21 09:20:29 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-21 09:20:30 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-21 09:20:30 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 09:20:30 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 09:20:30 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 09:20:30 INFO  LibraryApplication:61 - Started LibraryApplication in 2.456 seconds (JVM running for 3.048)
+2022-06-21 09:21:01 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-06-21 09:21:01 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-06-21 09:21:01 INFO  DefaultAuthorService:36 - Created author: id: 1, name: War and Peace, surname: 2
+2022-06-21 09:21:03 INFO  DefaultAuthorService:36 - Created author: id: 2, name: War and Peace, surname: 2
+2022-06-21 09:21:03 INFO  DefaultAuthorService:36 - Created author: id: 3, name: War and Peace, surname: 2
+2022-06-21 09:21:04 INFO  DefaultAuthorService:36 - Created author: id: 4, name: War and Peace, surname: 2
+2022-06-21 09:37:33 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 09:37:33 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2022-06-21 09:37:33 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

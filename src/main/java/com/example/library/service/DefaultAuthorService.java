@@ -62,11 +62,7 @@ public class DefaultAuthorService implements AuthorService{
     @Override
     public boolean checkAuthorPresence(long id) {
         Optional<AuthorEntity> authorEntityData = authorRepository.findById(id);
-        if (authorEntityData.isEmpty() ) {
-            return false;
-        } else {
-            return true;
-        }
+        return authorEntityData.isPresent();
     }
 
     @Override
@@ -82,7 +78,7 @@ public class DefaultAuthorService implements AuthorService{
         }
         else {
             log.error("Error updating Author with id: {}",id);
-            throw new AuthorNotUpdatedException("Author not found");
+            throw new AuthorNotUpdatedException("Error updating, author not found");
         }
     }
 
@@ -91,7 +87,7 @@ public class DefaultAuthorService implements AuthorService{
         Optional<AuthorEntity> authorEntityData = authorRepository.findById(id);
         if (authorEntityData.isEmpty() ) {
             log.error("Error deleting Author with id: {}",id);
-            throw new AuthorNotDeletedException("Author not found");
+            throw new AuthorNotDeletedException("Error deleting, author not found");
         } else {
             authorRepository.deleteById(id);
             log.info("Deleted author with: id: {}",id);

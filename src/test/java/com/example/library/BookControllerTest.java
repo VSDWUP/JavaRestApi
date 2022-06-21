@@ -2,8 +2,7 @@ package com.example.library;
 
 import com.example.library.controller.BookController;
 import com.example.library.converter.BookResourceModelConverter;
-import com.example.library.exceptions.BookNotFoundException;
-import com.example.library.exceptions.NoBooksFoundException;
+import com.example.library.exceptions.*;
 import com.example.library.model.Book;
 import com.example.library.resource.BookResource;
 import com.example.library.service.BookService;
@@ -126,18 +125,20 @@ public class BookControllerTest {
 
     @Test
     public void updateBookWithException(){
-        Book book = Book.builder()
+        BookResource bookResource = BookResource.builder()
                 .title("War and Peace")
                 .author_id(1)
                 .build();
+
         try {
-            bookService.updateBook(book,97819);
+
+            bookController.update(97819, bookResource);
         }
         catch (Exception e){
             String actualMessage = e.getMessage();
-            String exceptionMessage = "Book not found";
+            String exceptionMessage = "Error finding book for updating";
             assertEquals(exceptionMessage,actualMessage);
-            assertTrue(e instanceof BookNotFoundException);
+            assertTrue(e instanceof BookNotUpdatedException);
             verify(bookConverter, times(2)).convertFromModelToSource(any());
             verify(bookConverter, times(1)).convertFromSourceToModel(any());
             verify(bookService, times(1)).updateBook(any(),anyLong());
@@ -172,12 +173,19 @@ public class BookControllerTest {
 
     @Test
     public void deleteBookWithException(){
-        Long id = 8678l;
-        ResponseEntity<?> response = bookController.delete(id);
-
-        assertEquals(String.format("Successfully deleted author with id:%d",id),response.getBody());
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        verify(bookService, times(1)).deleteBook(anyLong());
+        long id = 8678L;
+        try {
+            bookController.delete(id);
+        }
+        catch (Exception e){
+            String actualMessage = e.getMessage();
+            String exceptionMessage = "Error deleting book";
+            assertEquals(exceptionMessage,actualMessage);
+            assertTrue(e instanceof BookNotDeletedException);
+            verify(bookConverter, times(2)).convertFromModelToSource(any());
+            verify(bookConverter, times(1)).convertFromSourceToModel(any());
+            verify(bookService, times(1)).updateBook(any(),anyLong());
+        }
     }
 
     @Test

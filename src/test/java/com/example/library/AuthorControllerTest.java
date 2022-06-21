@@ -2,7 +2,9 @@ package com.example.library;
 
 import com.example.library.controller.AuthorController;
 import com.example.library.converter.AuthorResourceModelConverter;
+import com.example.library.exceptions.AuthorNotDeletedException;
 import com.example.library.exceptions.AuthorNotFoundException;
+import com.example.library.exceptions.AuthorNotUpdatedException;
 import com.example.library.exceptions.NoAuthorsFoundException;
 import com.example.library.model.Author;
 import com.example.library.resource.AuthorResource;
@@ -91,7 +93,7 @@ public class AuthorControllerTest {
             String actualMessage = e.getMessage();
             String exceptionMessage = "Author not found";
             assertEquals(exceptionMessage,actualMessage);
-            assertTrue(e instanceof NoAuthorsFoundException);
+            assertTrue(e instanceof AuthorNotFoundException);
             verify(authorConverter, times(2)).convertFromModelToSource(any());
             verify(authorConverter, times(1)).convertFromSourceToModel(any());
             verify(authorService, times(1)).getAuthorWoLog(anyLong());
@@ -124,18 +126,18 @@ public class AuthorControllerTest {
 
     @Test
     public void updateAuthorWithException(){
-        Author author = Author.builder()
+        AuthorResource authorResource = AuthorResource.builder()
                 .name("Victor")
                 .surname("Pelevin")
                 .build();
         try {
-            authorService.updateAuthor(author,97819);
+            authorController.update(97819,authorResource);
         }
         catch (Exception e){
             String actualMessage = e.getMessage();
-            String exceptionMessage = "Author not found";
+            String exceptionMessage = "Error updating, author not found";
             assertEquals(exceptionMessage,actualMessage);
-            assertTrue(e instanceof AuthorNotFoundException);
+            assertTrue(e instanceof AuthorNotUpdatedException);
             verify(authorConverter, times(2)).convertFromModelToSource(any());
             verify(authorConverter, times(1)).convertFromSourceToModel(any());
             verify(authorService, times(1)).updateAuthor(any(),anyLong());
@@ -170,12 +172,19 @@ public class AuthorControllerTest {
 
     @Test
     public void deleteAuthorWithException(){
-        Long id = 8678l;
-        ResponseEntity<?> response = authorController.delete(id);
-
-        assertEquals(String.format("Successfully deleted author with id:%d",id),response.getBody());
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        verify(authorService, times(1)).deleteAuthor(anyLong());
+        long id = 8678L;
+        try {
+            authorController.delete(id);
+        }
+        catch (Exception e){
+            String actualMessage = e.getMessage();
+            String exceptionMessage = "Error deleting, author not found";
+            assertEquals(exceptionMessage,actualMessage);
+            assertTrue(e instanceof AuthorNotDeletedException);
+            verify(authorConverter, times(2)).convertFromModelToSource(any());
+            verify(authorConverter, times(1)).convertFromSourceToModel(any());
+            verify(authorService, times(1)).updateAuthor(any(),anyLong());
+        }
     }
 
     @Test
